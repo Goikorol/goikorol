@@ -506,3 +506,113 @@ footer {
         font-size: 1em;
     }
 }
+
+/* Footer estiloso */
+.site-footer {
+    background-color: #0f0f12;
+    border-top: 3px solid var(--twitch-purple);
+    margin-top: 60px;
+    padding: 40px 20px 20px;
+    color: #aaa;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-logo {
+    margin-bottom: 30px;
+}
+
+.footer-logo-img {
+    height: 60px;
+    width: auto;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.footer-logo span {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--twitch-purple);
+    display: block;
+}
+
+/* Redes sociales */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #1e1e24;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+.social-link img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-8px) scale(1.1);
+    box-shadow: 0 10px 25px rgba(114, 6, 190, 0.4);
+}
+
+.social-link:hover img {
+    transform: scale(1.2);
+}
+
+/* Donaciones con un toque especial */
+.social-link.donate {
+    background: linear-gradient(135deg, #ff6b6b, #f06595);
+}
+
+.social-link.donate:hover {
+    box-shadow: 0 10px 25px rgba(255, 107, 107, 0.5);
+}
+
+/* Texto inferior */
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.footer-bottom p {
+    margin: 8px 0;
+}
+
+/* Responsive móvil */
+@media (max-width: 768px) {
+    .social-links {
+        gap: 20px;
+    }
+
+    .social-link {
+        width: 50px;
+        height: 50px;
+    }
+
+    .social-link img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .footer-logo span {
+        font-size: 1.6em;
+    }
+}
