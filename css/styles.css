@@ -354,7 +354,7 @@ footer {
 }
 
 .stream-link {
-    color: var(--twitch-purple);
+    color: var(--twitch-accent);
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
