@@ -2,12 +2,34 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     // Header dinámico: Toggle menu para móvil
-    const menuToggle = document.getElementById('menu-toggle');
-    const navMenu = document.getElementById('nav-menu');
+    // Menú móvil animado
+const menuToggle = document.getElementById('menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+const body = document.body;
 
-    menuToggle.addEventListener('click', () => {
-        navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+    body.classList.toggle('menu-open');
+});
+
+// Cerrar menú al hacer click en un enlace
+document.querySelectorAll('#nav-menu-mobile a').forEach(link => {
+    link.addEventListener('click', () => {
+        menuToggle.classList.remove('active');
+        mobileMenu.classList.remove('active');
+        body.classList.remove('menu-open');
     });
+});
+
+// Cerrar menú al hacer click fuera (en el overlay)
+body.addEventListener('click', (e) => {
+    if (body.classList.contains('menu-open') && !mobileMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+        menuToggle.classList.remove('active');
+        mobileMenu.classList.remove('active');
+        body.classList.remove('menu-open');
+    }
+});
 
     // Función para agregar/quitar secciones en el header
     function addHeaderSection(name, id) {

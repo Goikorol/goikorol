@@ -4,26 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goikorol - Comunidad de Reacciones</title>
+    <link rel="icon" href="imagenes/logo.jpg" type="image/jpeg">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header id="dynamic-header">
-        <nav>
-            <div class="logo-container">
-                <!-- Logo + Texto -->
-                <img src="imagenes/logo.jpg" alt="Logo Goikorol" class="header-logo">
-                <span class="logo-text">Goikorol</span>
-            </div>
-            <ul id="nav-menu">
+    <nav>
+        <div class="logo-container">
+            <img src="imagenes/logo.jpg" alt="Logo Goikorol" class="header-logo">
+            <span class="logo-text">Goikorol</span>
+        </div>
+
+        <!-- Menú desktop (visible solo en pantallas grandes) -->
+        <ul id="nav-menu-desktop">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#horarios">Horarios de Streams</a></li>
+            <li><a href="#fotos">Fotos</a></li>
+            <li><a href="#musica">Música</a></li>
+        </ul>
+
+        <!-- Botón hamburguesa (solo visible en móvil) -->
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Menú móvil desplegable -->
+        <div class="mobile-menu" id="mobile-menu">
+            <ul id="nav-menu-mobile">
                 <li><a href="#home">Inicio</a></li>
                 <li><a href="#videos">Videos</a></li>
                 <li><a href="#horarios">Horarios de Streams</a></li>
                 <li><a href="#fotos">Fotos</a></li>
                 <li><a href="#musica">Música</a></li>
             </ul>
-            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
 
     <!-- Hero Banner -->
     <section id="hero">
