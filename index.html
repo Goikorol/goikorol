@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goikorol - Comunidad de Reacciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="dynamic-header">
+        <nav>
+            <div class="logo">Goikorol</div>
+            <ul id="nav-menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#horarios">Horarios de Streams</a></li>
+                <li><a href="#fotos">Fotos</a></li>
+                <li><a href="#musica">Música</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Bienvenidos a Goikorol</h1>
+            <p>Tu comunidad dedicada a reacciones de música, películas, series y más. ¡Únete al stream en Twitch!</p>
+        </section>
+
+        <section id="videos">
+            <h2>Videos y Listas de Reproducción</h2>
+            <div class="video-player-container">
+                <video id="video-player" controls>
+                    <source src="" type="video/mp4">
+                    Tu navegador no soporta el reproductor de video.
+                </video>
+                <div id="playlist-controls">
+                    <select id="playlist-select">
+                        <option value="">Selecciona una lista</option>
+                        <!-- Opciones agregadas dinámicamente via JS -->
+                    </select>
+                    <button id="add-playlist">Agregar Lista</button>
+                </div>
+                <ul id="current-playlist"></ul>
+            </div>
+        </section>
+
+        <section id="horarios">
+            <h2>Horarios de Streams</h2>
+            <ul id="stream-schedule">
+                <li>Lunes: 8 PM - Reacciones a Música</li>
+                <li>Miércoles: 7 PM - Películas y Series</li>
+                <li>Viernes: 9 PM - Sesión Libre</li>
+                <!-- Agrega más via JS si es necesario -->
+            </ul>
+        </section>
+
+        <section id="fotos">
+            <h2>Fotos de la Comunidad</h2>
+            <div class="gallery">
+                <!-- Agrega imágenes aquí, e.g. <img src="foto1.jpg" alt="Foto 1"> -->
+                <p>Sube tus fotos y compártelas con la comunidad.</p>
+            </div>
+        </section>
+
+        <section id="musica">
+            <h2>Música Recomendada</h2>
+            <p>Aquí puedes encontrar playlists de música relacionadas con nuestras reacciones.</p>
+            <!-- Integra embeds de Spotify o similar si lo deseas -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Goikorol. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
