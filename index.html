@@ -48,69 +48,100 @@
     </nav>
 </header>
 
-    <!-- Hero Banner -->
+        <!-- Hero Banner -->
     <section id="hero">
         <img src="imagenes/Picsart_25-12-18_00-33-47-553.png" alt="Banner Goikorol" class="hero-banner">
     </section>
 
-    <main>
-        <section id="home">
+    <!-- TABS DE NAVEGACIÓN (estilo YouTube) -->
+    <div class="tabs-container">
+        <div class="tabs">
+            <button class="tab-button active" data-tab="home">Inicio</button>
+            <button class="tab-button" data-tab="videos">Videos</button>
+            <button class="tab-button" data-tab="horarios">Horarios</button>
+            <button class="tab-button" data-tab="fotos">Fotos</button>
+            <button class="tab-button" data-tab="musica">Música</button>
+            <button class="tab-button" data-tab="comunidad">Comunidad</button>
+        </div>
+    </div>
+
+    <main class="tab-content">
+        <!-- Sección Inicio -->
+        <section id="home" class="tab-panel active">
             <h1>Bienvenidos a Goikorol</h1>
-            <p>☣️ Youtuber reaccionador muy locooooooo y CARETAAAAAAA!!!!!<br>Me gustan los videojuegos, la música, el cine, las charlas amenas y llevo jugando a rol 30 años.<br>También soy muy payasete y un sinvergüenza... 🤣</p>
+            <p>☣️ Youtuber reaccionador muy locooooooo y CARETAAAAAAA!!!!! Me gustan los videojuegos, la música, el cine, las charlas amenas y llevo jugando a rol 30 años. También soy muy payasete y un sinvergüenza... 🤣</p>
         </section>
 
-        <section id="videos">
-            <h2>Videos y Listas de Reproducción</h2>
-            <div class="video-player-container">
-                <video id="video-player" controls>
-                    <source src="" type="video/mp4">
-                    Tu navegador no soporta el reproductor de video.
-                </video>
-                <div id="playlist-controls">
-                    <select id="playlist-select">
-                        <option value="">Selecciona una lista</option>
-                        <!-- Opciones agregadas dinámicamente via JS -->
-                    </select>
-                    <button id="add-playlist">Agregar Lista</button>
+        <!-- Sección Videos - GRID estilo YouTube -->
+        <section id="videos" class="tab-panel">
+            <h2>Vídeos</h2>
+            <div class="video-grid">
+                <!-- Ejemplos de tarjetas de video - podés agregar todas las que quieras -->
+                <div class="video-card">
+                    <div class="thumbnail">
+                        <img src="imagenes/thumbnails/thumb1.jpg" alt="Thumbnail 1">
+                        <span class="duration">15:32</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>Reacción ÉPICA a Spinetta - Kamikaze</h3>
+                        <p>Goikorol • 5.2K vistas • hace 3 días</p>
+                    </div>
                 </div>
-                <ul id="current-playlist"></ul>
+
+                <div class="video-card">
+                    <div class="thumbnail">
+                        <img src="imagenes/thumbnails/thumb2.jpg" alt="Thumbnail 2">
+                        <span class="duration">28:45</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>Primera vez viendo Interstellar 😱</h3>
+                        <p>Goikorol • 12K vistas • hace 1 semana</p>
+                    </div>
+                </div>
+
+                <!-- Agregá más .video-card aquí -->
+                <div class="video-card">
+                    <div class="thumbnail">
+                        <img src="imagenes/thumbnails/placeholder.jpg" alt="Placeholder">
+                        <span class="duration">1:12:05</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>Charla de rol de mesa con la comunidad</h3>
+                        <p>Goikorol • 3.8K vistas • hace 2 semanas</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-       <section id="horarios">
-            <h2>Proximos Streams</h2>
+        <!-- Resto de secciones -->
+        <section id="horarios" class="tab-panel">
+            <h2>Próximos Streams</h2>
             <ul id="stream-schedule">
                 <li>
                     <a href="https://www.twitch.tv/goikorol" target="_blank" class="stream-link">
-                        Domingo 21: 12hs Arg | Kamikaze - Luis Alberto Spinetta
+                        Domingo 21: 12hs Arg - Kamikaze - Luis Alberto Spinetta
                     </a>
                 </li>
-                <li>
-                    <a href="https://www.twitch.tv/goikorol" target="_blank" class="stream-link">
-                        Miercoles 24: 18hs Arg | Villancicos navideños
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.twitch.tv/goikorol" target="_blank" class="stream-link">
-                        Sabado 27: 10hs Arg | Nada, descansamos!
-                    </a>
-                </li>
-                <!-- Agrega más via JS si es necesario -->
+                <li>Miércoles: 7 PM - Películas y Series</li>
+                <li>Viernes: 9 PM - Sesión Libre</li>
             </ul>
         </section>
 
-        <section id="fotos">
+        <section id="fotos" class="tab-panel">
             <h2>Fotos de la Comunidad</h2>
             <div class="gallery">
-                <!-- Agrega imágenes aquí, e.g. <img src="foto1.jpg" alt="Foto 1"> -->
                 <p>Sube tus fotos y compártelas con la comunidad.</p>
             </div>
         </section>
 
-        <section id="musica">
+        <section id="musica" class="tab-panel">
             <h2>Música Recomendada</h2>
             <p>Aquí puedes encontrar playlists de música relacionadas con nuestras reacciones.</p>
-            <!-- Integra embeds de Spotify o similar si lo deseas -->
+        </section>
+
+        <section id="comunidad" class="tab-panel">
+            <h2>Comunidad</h2>
+            <p>¡Únete a nuestra comunidad en Discord, Twitch chat y más! (próximamente enlaces)</p>
         </section>
     </main>
 

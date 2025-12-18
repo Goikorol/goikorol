@@ -125,3 +125,16 @@ body.addEventListener('click', (e) => {
 
     // Para horarios: Podrías hacer dinámico similar, pero por ahora estático
 });
+// Sistema de Tabs
+document.querySelectorAll('.tab-button').forEach(button => {
+    button.addEventListener('click', () => {
+        // Quitar active de todos
+        document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+        document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.remove('active'));
+
+        // Activar el clickeado
+        button.classList.add('active');
+        const tabId = button.getAttribute('data-tab');
+        document.getElementById(tabId).classList.add('active');
+    });
+});
