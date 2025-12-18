@@ -369,27 +369,36 @@ footer {
     text-shadow: 0 0 10px rgba(114, 6, 190, 0.8);
     transform: translateX(5px);
 }
-/* Tabs estilo YouTube */
+/* Tabs estilo YouTube - CENTRADOS EN DESKTOP */
 .tabs-container {
     background-color: var(--twitch-dark);
     border-bottom: 1px solid #333;
     position: sticky;
-    top: 60px; /* Ajustá según la altura de tu header */
+    top: 60px; /* Ajustá si tu header cambia de altura */
     z-index: 900;
     overflow-x: auto;
     white-space: nowrap;
+    -webkit-overflow-scrolling: touch; /* Scroll suave en iOS */
+    scrollbar-width: none; /* Oculta scrollbar en Firefox */
+}
+
+.tabs-container::-webkit-scrollbar {
+    display: none; /* Oculta scrollbar en Chrome/Safari */
 }
 
 .tabs {
     display: flex;
-    padding: 0 20px;
+    justify-content: center; /* ¡Esto centra los tabs en desktop! */
+    gap: 8px; /* Espacio bonito entre tabs */
+    padding: 10px 20px;
+    min-width: max-content; /* Evita que se compriman */
 }
 
 .tab-button {
     background: none;
     border: none;
     color: #aaa;
-    padding: 15px 20px;
+    padding: 15px 24px;
     font-size: 1.1em;
     font-weight: 600;
     cursor: pointer;
@@ -397,6 +406,8 @@ footer {
     letter-spacing: 0.5px;
     transition: all 0.3s ease;
     flex-shrink: 0;
+    white-space: nowrap;
+    border-radius: 8px 8px 0 0; /* Opcional: esquinas redondeadas arriba */
 }
 
 .tab-button:hover {
@@ -407,6 +418,7 @@ footer {
 .tab-button.active {
     color: var(--twitch-purple);
     border-bottom: 3px solid var(--twitch-purple);
+    background-color: rgba(114, 6, 190, 0.1);
 }
 
 /* Contenido de tabs */
