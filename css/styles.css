@@ -5,6 +5,7 @@
     --twitch-purple: #7206be;;
     --twitch-dark: #18181B;
     --twitch-accent: #6e33db;
+    --twitch-links: #945bff;
     --text-light: #FFFFFF;
     --text-dark: #000000;
 }
@@ -354,7 +355,7 @@ footer {
 }
 
 .stream-link {
-    color: var(--twitch-accent);
+    color: var(--twitch-links);
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
