@@ -1,26 +1,26 @@
 [
     {
-        "id": "dQw4w9WgXcQ",  
+        "id": "dQw4w9WgXcQ",
         "title": "Reacción ÉPICA a Spinetta - Kamikaze",
-        "description": "Mi reacción loca a este clásico. ¡No te lo pierdas!",
+        "description": "Mi reacción loca a este clásico argentino. ¡Imperdible!",
         "date": "2025-12-15",
-        "tags": ["música", "reacción", "spinetta"],
+        "tags": ["música", "reacción", "spinetta", "argentina"],
         "thumbnail": "https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg"
     },
     {
-        "id": "jNQXAC9IVRw",
+        "id": "M7lc1UVf-VE",
         "title": "Primera vez viendo Interstellar 😱",
-        "description": "¡Mind blown con esta película!",
+        "description": "¡Mi mente explotó con esta película!",
         "date": "2025-12-10",
-        "tags": ["cine", "reacción", "sci-fi"],
-        "thumbnail": "https://img.youtube.com/vi/jNQXAC9IVRw/hqdefault.jpg"
+        "tags": ["cine", "reacción", "interstellar", "nolan"],
+        "thumbnail": "https://img.youtube.com/vi/M7lc1UVf-VE/hqdefault.jpg"
     },
     {
-        "id": "VIDEO_ID_AQUI",
+        "id": "kJQP7kiw5Fk",
         "title": "Charla de rol de mesa con la comunidad",
-        "description": "Sesión épica de rol.",
+        "description": "Sesión épica con dados, risas y caos total.",
         "date": "2025-12-05",
-        "tags": ["rol", "comunidad", "juegos"],
-        "thumbnail": "https://img.youtube.com/vi/VIDEO_ID_AQUI/hqdefault.jpg"
+        "tags": ["rol", "juegos de mesa", "comunidad", "dnd"],
+        "thumbnail": "https://img.youtube.com/vi/kJQP7kiw5Fk/hqdefault.jpg"
     }
 ]
