@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Video - Goikorol</title>
+    <link rel="icon" href="imagenes/logo.png" type="image/jpeg">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header simplificado (o copia el completo si querés) -->
+    <header id="dynamic-header">
+        <!-- ... pega tu nav ... -->
+    </header>
+
+    <main>
+        <section id="add-video">
+            <h2>Agregar Nuevo Video</h2>
+            <form id="video-form">
+                <label for="id">ID de YouTube (ej: dQw4w9WgXcQ):</label>
+                <input type="text" id="id" required>
+
+                <label for="title">Título:</label>
+                <input type="text" id="title" required>
+
+                <label for="description">Descripción:</label>
+                <textarea id="description" required></textarea>
+
+                <label for="date">Fecha (YYYY-MM-DD):</label>
+                <input type="date" id="date" required>
+
+                <label for="tags">Tags (separados por coma):</label>
+                <input type="text" id="tags" placeholder="música,reacción,spinetta">
+
+                <!-- Thumbnail se genera auto con el ID -->
+                <p>Thumbnail: Se genera automáticamente desde YouTube.</p>
+
+                <button type="submit">Agregar Video</button>
+                <button type="button" id="clear-form">Limpiar</button>
+                <button type="button" id="download-json">Descargar JSON Actualizado</button>
+                <button type="button" id="copy-json">Copiar JSON al Portapapeles</button>
+            </form>
+            <p id="status"></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <!-- ... pega tu footer ... -->
+    </footer>
+
+    <script>
+        let videos = JSON.parse(localStorage.getItem('videos')) || [];
+
+        // Agregar video
+        document.getElementById('video-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const newVideo = {
+                id: document.getElementById('id').value,
+                title: document.getElementById('title').value,
+                description: document.getElementById('description').value,
+                date: document.getElementById('date').value,
+                tags: document.getElementById('tags').value.split(',').map(tag => tag.trim()),
+                thumbnail: `https://img.youtube.com/vi/${document.getElementById('id').value}/hqdefault.jpg`
+            };
+            videos.push(newVideo);
+            localStorage.setItem('videos', JSON.stringify(videos));
+            document.getElementById('status').textContent = '¡Video agregado! Descarga el JSON para actualizar el sitio.';
+            e.target.reset();
+        });
+
+        // Limpiar form
+        document.getElementById('clear-form').addEventListener('click', () => {
+            document.getElementById('video-form').reset();
+        });
+
+        // Descargar JSON
+        document.getElementById('download-json').addEventListener('click', () => {
+            const blob = new Blob([JSON.stringify(videos, null, 4)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'videos.json';
+            a.click();
+            URL.revokeObjectURL(url);
+        });
+
+        // Copiar JSON
+        document.getElementById('copy-json').addEventListener('click', () => {
+            navigator.clipboard.writeText(JSON.stringify(videos, null, 4));
+            document.getElementById('status').textContent = '¡JSON copiado al portapapeles!';
+        });
+    </script>
+</body>
+</html>

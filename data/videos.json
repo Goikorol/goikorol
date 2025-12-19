@@ -1,0 +1,26 @@
+[
+    {
+        "id": "dQw4w9WgXcQ",  // ID real de YouTube (ejemplo: Rick Roll)
+        "title": "Reacción ÉPICA a Spinetta - Kamikaze",
+        "description": "Mi reacción loca a este clásico. ¡No te lo pierdas!",
+        "date": "2025-12-15",
+        "tags": ["música", "reacción", "spinetta"],
+        "thumbnail": "https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg"
+    },
+    {
+        "id": "jNQXAC9IVRw",
+        "title": "Primera vez viendo Interstellar 😱",
+        "description": "¡Mind blown con esta película!",
+        "date": "2025-12-10",
+        "tags": ["cine", "reacción", "sci-fi"],
+        "thumbnail": "https://img.youtube.com/vi/jNQXAC9IVRw/hqdefault.jpg"
+    },
+    {
+        "id": "VIDEO_ID_AQUI",
+        "title": "Charla de rol de mesa con la comunidad",
+        "description": "Sesión épica de rol.",
+        "date": "2025-12-05",
+        "tags": ["rol", "comunidad", "juegos"],
+        "thumbnail": "https://img.youtube.com/vi/VIDEO_ID_AQUI/hqdefault.jpg"
+    }
+]

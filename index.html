@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goikorol - Comunidad de Reacciones</title>
-    <link rel="icon" href="imagenes/logo.png" type="image/jpeg">
+    <link rel="icon" href="imagenes/logo.webp" type="image/jpeg">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
     <nav>
         <div class="logo-container">
             <a href= "index.html">
-                <img src="imagenes/logo.png" alt="Logo Goikorol" class="header-logo">
+                <img src="imagenes/logo.webp" alt="Logo Goikorol" class="header-logo">
             </a>
             <a href= "index.html">
                 <span class="logo-text">Goikorol</span>
@@ -74,44 +74,11 @@
 
         <!-- Sección Videos - GRID estilo YouTube -->
         <section id="videos" class="tab-panel">
-            <h2>Vídeos</h2>
-            <div class="video-grid">
-                <!-- Ejemplos de tarjetas de video - podés agregar todas las que quieras -->
-                <div class="video-card">
-                    <div class="thumbnail">
-                        <img src="imagenes/kamikaze.jpg" alt="Thumbnail 1">
-                        <span class="duration">15:32</span>
-                    </div>
-                    <div class="video-info">
-                        <h3>Reacción ÉPICA a Spinetta - Kamikaze</h3>
-                        <p>Goikorol • 5.2K vistas • hace 3 días</p>
-                    </div>
-                </div>
-
-                <div class="video-card">
-                    <div class="thumbnail">
-                        <img src="imagenes/interestelar.jpg" alt="Thumbnail 2">
-                        <span class="duration">28:45</span>
-                    </div>
-                    <div class="video-info">
-                        <h3>Primera vez viendo Interstellar 😱</h3>
-                        <p>Goikorol • 12K vistas • hace 1 semana</p>
-                    </div>
-                </div>
-
-                <!-- Agregá más .video-card aquí -->
-                <div class="video-card">
-                    <div class="thumbnail">
-                        <img src="imagenes/Made with FlexClip AI-2025-12-18T063724.png" alt="Placeholder">
-                        <span class="duration">1:12:05</span>
-                    </div>
-                    <div class="video-info">
-                        <h3>Charla de rol de mesa con la comunidad</h3>
-                        <p>Goikorol • 3.8K vistas • hace 2 semanas</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <h2>Vídeos</h2>
+    <div class="video-grid" id="video-grid">
+        <!-- Las tarjetas se generan aquí dinámicamente via JS -->
+    </div>
+</section>
 
         <!-- Resto de secciones -->
         <section id="horarios" class="tab-panel">

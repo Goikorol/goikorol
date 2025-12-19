@@ -138,3 +138,43 @@ document.querySelectorAll('.tab-button').forEach(button => {
         document.getElementById(tabId).classList.add('active');
     });
 });
+// Cargar videos desde JSON y generar grid
+async function loadVideos() {
+    try {
+        const response = await fetch('data/videos.json');
+        const videos = await response.json();
+        
+        const grid = document.getElementById('video-grid');
+        grid.innerHTML = ''; // Limpiar
+
+        videos.forEach(video => {
+            const card = document.createElement('div');
+            card.className = 'video-card';
+            card.addEventListener('click', () => {
+                window.location.href = `player.html?video=${video.id}`;
+            });
+
+            card.innerHTML = `
+                <div class="thumbnail">
+                    <img src="${video.thumbnail}" alt="${video.title}">
+                    <span class="duration">Ver video</span>  <!-- Puedes calcular duración si tienes API, por ahora placeholder -->
+                </div>
+                <div class="video-info">
+                    <h3>${video.title}</h3>
+                    <p>Goikorol • Publicado: ${video.date} • Tags: ${video.tags.join(', ')}</p>
+                    <p class="desc">${video.description}</p>
+                </div>
+            `;
+
+            grid.appendChild(card);
+        });
+    } catch (error) {
+        console.error('Error cargando videos:', error);
+    }
+}
+
+// Llamar al cargar la página
+document.addEventListener('DOMContentLoaded', () => {
+    loadVideos();
+    // ... tu otro código de tabs, menú, etc.
+});

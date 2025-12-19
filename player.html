@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproduciendo Video - Goikorol</title>
+    <link rel="icon" href="imagenes/logo.png" type="image/jpeg">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Copia tu header completo aquí (incluyendo nav, logo, menú móvil, etc.) -->
+    <header id="dynamic-header">
+        <!-- ... pega tu <nav> entero de index.html ... -->
+    </header>
+
+    <!-- Hero Banner (opcional, o quítalo si querés foco en el video) -->
+    <section id="hero">
+        <img src="imagenes/Picsart_25-12-18_00-33-47-553.png" alt="Banner Goikorol" class="hero-banner">
+    </section>
+
+    <!-- Tabs (copia de index.html para consistencia) -->
+    <div class="tabs-container">
+        <div class="tabs">
+            <button class="tab-button" data-tab="home">Inicio</button>
+            <button class="tab-button active" data-tab="videos">Videos</button>
+            <!-- ... el resto de tabs ... -->
+        </div>
+    </div>
+
+    <main class="tab-content">
+        <section id="player" class="tab-panel active">
+            <h2>Reproduciendo Video</h2>
+            <div class="video-player-container">
+                <iframe id="youtube-player" width="100%" height="500" frameborder="0" allowfullscreen></iframe>
+                <div id="video-details">
+                    <!-- Detalles se cargan via JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Copia tu footer completo aquí -->
+    <footer class="site-footer">
+        <!-- ... pega tu footer entero ... -->
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    <script>
+        // Cargar video desde URL param
+        const urlParams = new URLSearchParams(window.location.search);
+        const videoId = urlParams.get('video');
+        if (videoId) {
+            document.getElementById('youtube-player').src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+            
+            // Opcional: Cargar detalles desde JSON (buscar por ID)
+            async function loadDetails() {
+                const response = await fetch('data/videos.json');
+                const videos = await response.json();
+                const video = videos.find(v => v.id === videoId);
+                if (video) {
+                    document.querySelector('#player h2').textContent = video.title;
+                    document.getElementById('video-details').innerHTML = `
+                        <p>${video.description}</p>
+                        <p>Publicado: ${video.date} | Tags: ${video.tags.join(', ')}</p>
+                    `;
+                }
+            }
+            loadDetails();
+        }
+    </script>
+</body>
+</html>
