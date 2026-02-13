@@ -1,18 +1,18 @@
 [
-    {
-        "id": "https://www.youtube.com/watch?v=YXl8ssu8o2U&t=196s",
-        "title": "📺 LOS SIMULADORES T2E1 | Los Cuatro Notables",
-        "description": "Comienza la Segunda Temporada de Los Simuladores; Episodio 1 Los Cuatro Notables",
-        "date": "2026-02-11",
-        "tags": [
-            "series",
-            "simuladores",
-            "temporada 2",
-            "argentina",
-            "reacción",
-            "vasco",
-            "goikorol"
-        ],
-        "thumbnail": "https://img.youtube.com/vi/https://www.youtube.com/watch?v=YXl8ssu8o2U&t=196s/hqdefault.jpg"
-    }
+  {
+    "id": "YXl8ssu8o2U",
+    "title": "📺 LOS SIMULADORES T2E1 | Los Cuatro Notables",
+    "description": "Comienza la Segunda Temporada de Los Simuladores; Episodio 1 Los Cuatro Notables",
+    "date": "2026-02-11",
+    "tags": [
+      "series",
+      "simuladores",
+      "temporada 2",
+      "argentina",
+      "reacción",
+      "vasco",
+      "goikorol"
+    ],
+    "thumbnail": "https://img.youtube.com/vi/YXl8ssu8o2U/hqdefault.jpg"
+  }
 ]
