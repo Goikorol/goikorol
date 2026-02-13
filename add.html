@@ -109,10 +109,21 @@
         form.reset();
     });
 
-    // Limpiar formulario
-    document.getElementById('clear-form').addEventListener('click', () => {
-        form.reset();
-    });
+    // Limpiar TODO (form + videos + JSON)
+document.getElementById('clear-form').addEventListener('click', () => {
+    const confirmClear = confirm(
+        '⚠️ Esto eliminará TODOS los videos cargados.\n¿Querés continuar?'
+    );
+
+    if (!confirmClear) return;
+
+    videos = [];
+    localStorage.removeItem('videos');
+    form.reset();
+    jsonPreview.value = '[]';
+    status.textContent = '🧹 Todo fue limpiado correctamente.';
+});
+
 
     // Descargar JSON
     document.getElementById('download-json').addEventListener('click', () => {
