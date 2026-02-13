@@ -86,6 +86,15 @@
 
     <script src="js/scripts.js"></script>
     <script>
+    const backButton = document.getElementById('back-button');
+
+    backButton.addEventListener('click', () => {
+        // Volver a index y abrir pestaña Videos
+        window.location.href = 'index.html#videos';
+    });
+</script>
+
+    <script>
         // Cargar video desde URL param
         const urlParams = new URLSearchParams(window.location.search);
         const videoId = urlParams.get('video');
