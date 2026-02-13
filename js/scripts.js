@@ -170,11 +170,12 @@ async function loadVideos() {
                     <div class="play-icon">▶</div>
                 </div>
                 <div class="video-info">
-                    <h3>${video.title}</h3>
-                    <p>${video.description}</p>
-                    <p class="meta">Publicado: ${video.date} • ${video.tags.join(' • ')}</p>
+                    <h3 class="video-title">${video.title}</h3>
+                    <p class="video-description">${video.description}</p>
+                    <p class="video-date">📅 ${video.date}</p>
                 </div>
             `;
+
 
             grid.appendChild(card);
         });
