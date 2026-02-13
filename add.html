@@ -74,6 +74,11 @@
         localStorage.setItem('videos', JSON.stringify(videos));
     }
 
+    // Fecha de hoy por defecto
+        document.getElementById('date').value =
+            new Date().toISOString().split('T')[0];
+
+
     // Inicializar preview
     updatePreview();
 
