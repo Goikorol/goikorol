@@ -42,6 +42,11 @@
             </form>
             <p id="status"></p>
         </section>
+        <h3>JSON generado</h3>
+            <textarea id="json-preview" rows="15" readonly
+                style="width:100%; font-family: monospace; resize: vertical;">
+            </textarea>
+
     </main>
 
     <!-- Footer -->
@@ -50,46 +55,85 @@
     </footer>
 
     <script>
-        let videos = JSON.parse(localStorage.getItem('videos')) || [];
+    let videos = JSON.parse(localStorage.getItem('videos')) || [];
 
-        // Agregar video
-        document.getElementById('video-form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            const newVideo = {
-                id: document.getElementById('id').value,
-                title: document.getElementById('title').value,
-                description: document.getElementById('description').value,
-                date: document.getElementById('date').value,
-                tags: document.getElementById('tags').value.split(',').map(tag => tag.trim()),
-                thumbnail: `https://img.youtube.com/vi/${document.getElementById('id').value}/hqdefault.jpg`
-            };
-            videos.push(newVideo);
-            localStorage.setItem('videos', JSON.stringify(videos));
-            document.getElementById('status').textContent = '¡Video agregado! Descarga el JSON para actualizar el sitio.';
-            e.target.reset();
-        });
+    const form = document.getElementById('video-form');
+    const jsonPreview = document.getElementById('json-preview');
+    const status = document.getElementById('status');
 
-        // Limpiar form
-        document.getElementById('clear-form').addEventListener('click', () => {
-            document.getElementById('video-form').reset();
-        });
+    // Extraer ID desde URL o ID directo
+    function extractYouTubeID(input) {
+        const regex = /(?:v=|youtu\.be\/|embed\/)([^?&]+)/;
+        const match = input.match(regex);
+        return match ? match[1] : input.trim();
+    }
 
-        // Descargar JSON
-        document.getElementById('download-json').addEventListener('click', () => {
-            const blob = new Blob([JSON.stringify(videos, null, 4)], { type: 'application/json' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'videos.json';
-            a.click();
-            URL.revokeObjectURL(url);
-        });
+    // Actualizar preview JSON
+    function updatePreview() {
+        jsonPreview.value = JSON.stringify(videos, null, 4);
+        localStorage.setItem('videos', JSON.stringify(videos));
+    }
 
-        // Copiar JSON
-        document.getElementById('copy-json').addEventListener('click', () => {
-            navigator.clipboard.writeText(JSON.stringify(videos, null, 4));
-            document.getElementById('status').textContent = '¡JSON copiado al portapapeles!';
-        });
-    </script>
+    // Inicializar preview
+    updatePreview();
+
+    // Agregar video
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const rawInput = document.getElementById('id').value;
+        const videoId = extractYouTubeID(rawInput);
+
+        const newVideo = {
+            id: videoId,
+            title: document.getElementById('title').value,
+            description: document.getElementById('description').value,
+            date: document.getElementById('date').value,
+            tags: document.getElementById('tags').value
+                .split(',')
+                .map(t => t.trim())
+                .filter(Boolean),
+            thumbnail: `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`
+        };
+
+        // Evitar duplicados
+        if (videos.some(v => v.id === videoId)) {
+            status.textContent = '⚠️ Este video ya está cargado.';
+            return;
+        }
+
+        videos.push(newVideo);
+        updatePreview();
+
+        status.textContent = '✅ Video agregado correctamente.';
+        form.reset();
+    });
+
+    // Limpiar formulario
+    document.getElementById('clear-form').addEventListener('click', () => {
+        form.reset();
+    });
+
+    // Descargar JSON
+    document.getElementById('download-json').addEventListener('click', () => {
+        const blob = new Blob(
+            [JSON.stringify(videos, null, 4)],
+            { type: 'application/json' }
+        );
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'videos.json';
+        a.click();
+        URL.revokeObjectURL(url);
+    });
+
+    // Copiar JSON
+    document.getElementById('copy-json').addEventListener('click', () => {
+        navigator.clipboard.writeText(jsonPreview.value);
+        status.textContent = '📋 JSON copiado al portapapeles.';
+    });
+</script>
+
 </body>
 </html>
