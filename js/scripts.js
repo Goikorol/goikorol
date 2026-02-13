@@ -125,19 +125,40 @@ body.addEventListener('click', (e) => {
 
     // Para horarios: Podrías hacer dinámico similar, pero por ahora estático
 });
-// Sistema de Tabs
+// SISTEMA DE TABS GLOBAL (funciona entre páginas)
 document.querySelectorAll('.tab-button').forEach(button => {
     button.addEventListener('click', () => {
-        // Quitar active de todos
-        document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
-        document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.remove('active'));
+        const tab = button.dataset.tab;
 
-        // Activar el clickeado
-        button.classList.add('active');
-        const tabId = button.getAttribute('data-tab');
-        document.getElementById(tabId).classList.add('active');
+        // Si NO estamos en index.html → navegar
+        if (!document.getElementById(tab)) {
+            window.location.href = `index.html#${tab}`;
+            return;
+        }
+
+        activateTab(tab);
     });
 });
+
+// Activar tab por nombre
+function activateTab(tabId) {
+    document.querySelectorAll('.tab-button').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.tab === tabId);
+    });
+
+    document.querySelectorAll('.tab-panel').forEach(panel => {
+        panel.classList.toggle('active', panel.id === tabId);
+    });
+}
+
+// Activar tab desde hash al cargar
+document.addEventListener('DOMContentLoaded', () => {
+    const hash = window.location.hash.replace('#', '');
+    if (hash) {
+        activateTab(hash);
+    }
+});
+
 // Cargar videos dinámicamente desde videos.json
 async function loadVideos() {
     const grid = document.getElementById('video-grid');
