@@ -731,3 +731,23 @@ footer {
 .video-card:hover .thumbnail img {
     transform: scale(1.1);
 }
+
+
+.player-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#back-button {
+    background: #ff0033;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#back-button:hover {
+    opacity: 0.85;
+}
