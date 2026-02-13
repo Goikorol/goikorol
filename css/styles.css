@@ -661,7 +661,7 @@ footer {
 #player-title {
     font-size: 2rem;
     font-weight: 700;
-    color: #d593e9;
+    color: var(--twitch-purple);
     margin-bottom: 0.4rem;
     line-height: 1.3;
 }
