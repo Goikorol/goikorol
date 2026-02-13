@@ -692,7 +692,7 @@ footer {
 #back-button {
     background: transparent;
     border: none;
-    color: #ff3b3b;
+    color: #ff3b3b4f;
     font-size: 0.9rem;
     cursor: pointer;
     font-weight: 600;
@@ -700,6 +700,7 @@ footer {
 
 #back-button:hover {
     text-decoration: underline;
+    color: #ff3b3b;
 }
 
 /* RESPONSIVE */
@@ -796,7 +797,7 @@ footer {
 }
 
 #back-button {
-    background: #ff0033;
+    color: #ff3b3b4f;
     border: none;
     color: white;
     padding: 8px 14px;
@@ -806,6 +807,7 @@ footer {
 
 #back-button:hover {
     opacity: 0.85;
+    background: #ff0033;
 }
 
 
