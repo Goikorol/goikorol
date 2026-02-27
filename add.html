@@ -35,6 +35,23 @@
                 <!-- Thumbnail se genera auto con el ID -->
                 <p>Thumbnail: Se genera automáticamente desde YouTube.</p>
 
+                <label for="category">Sección:</label>
+                <select id="category" required>
+                    <option value="">Seleccionar sección</option>
+                    <option value="goikorol">Goikorol</option>
+                    <option value="themoviesniper">The Movie Sniper</option>
+                    <option value="directos">Directos</option>
+                    <option value="gameplays">Gameplays</option>
+                </select>
+
+                <label for="playlist">Playlist:</label>
+                <input
+                    type="text"
+                    id="playlist"
+                    placeholder="Ej: Los Simuladores temporada 2"
+                    required
+                >
+
                 <button type="submit">Agregar Video</button>
                 <button type="button" id="clear-form">Limpiar</button>
                 <button type="button" id="download-json">Descargar JSON Actualizado</button>
