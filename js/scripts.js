@@ -93,7 +93,7 @@ document.querySelectorAll('.tab-button').forEach(button => {
     });
 });
 
-// Activar tab por nombre
+// Activar tab
 function activateTab(tabId) {
     document.querySelectorAll('.tab-button').forEach(btn => {
         btn.classList.toggle('active', btn.dataset.tab === tabId);
@@ -104,15 +104,7 @@ function activateTab(tabId) {
     });
 }
 
-// Activar tab desde hash al cargar
-document.addEventListener('DOMContentLoaded', () => {
-    const hash = window.location.hash.replace('#', '');
-    if (hash) {
-        activateTab(hash);
-    }
-});
-
-// Cargar videos dinámicamente desde videos.json
+// Cargar videos desde videos.json
 async function loadVideos() {
     const grids = document.querySelectorAll('.video-grid');
     if (!grids.length) return;
@@ -157,21 +149,11 @@ async function loadVideos() {
         });
 
     } catch (err) {
-        console.error(err);
+        console.error('Error cargando videos:', err);
     }
 }
 
-document.addEventListener('DOMContentLoaded', loadVideos);
-
-// Ejecutar cuando la página cargue
-document.addEventListener('DOMContentLoaded', loadVideos);
-
-// Llamar al cargar la página
-document.addEventListener('DOMContentLoaded', () => {
-    loadVideos();
-    // ... tu otro código de tabs, menú, etc.
-});
-
+// Cargar playlists y filtros
 async function loadPlaylists() {
     const selects = document.querySelectorAll('.playlist-filter');
     if (!selects.length) return;
@@ -214,4 +196,63 @@ async function loadPlaylists() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', loadPlaylists);
+// ---------- INIT ----------
+document.addEventListener('DOMContentLoaded', () => {
+
+    // ===== MENÚ MÓVIL =====
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const body = document.body;
+
+    if (menuToggle && mobileMenu) {
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            body.classList.toggle('menu-open');
+        });
+
+        document.querySelectorAll('#nav-menu-mobile a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                body.classList.remove('menu-open');
+            });
+        });
+
+        body.addEventListener('click', (e) => {
+            if (
+                body.classList.contains('menu-open') &&
+                !mobileMenu.contains(e.target) &&
+                !menuToggle.contains(e.target)
+            ) {
+                menuToggle.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                body.classList.remove('menu-open');
+            }
+        });
+    }
+
+    // ===== TABS =====
+    document.querySelectorAll('.tab-button').forEach(button => {
+        button.addEventListener('click', () => {
+            const tab = button.dataset.tab;
+
+            if (!document.getElementById(tab)) {
+                window.location.href = `index.html#${tab}`;
+                return;
+            }
+
+            activateTab(tab);
+        });
+    });
+
+    // Activar tab desde hash
+    const hash = window.location.hash.replace('#', '');
+    if (hash) {
+        activateTab(hash);
+    }
+
+    // ===== VIDEOS Y FILTROS =====
+    loadVideos();
+    loadPlaylists();
+});
