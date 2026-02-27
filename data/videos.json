@@ -140,7 +140,9 @@
             "vasco",
             "español"
         ],
-        "thumbnail": "https://img.youtube.com/vi/3rta2lU1E_o/hqdefault.jpg"
+        "thumbnail": "https://img.youtube.com/vi/3rta2lU1E_o/hqdefault.jpg",
+        "category": "themoviesniper",
+        "playlist": "Acción"
     },
     {
         "id": "DiLxQk7UkjY",
@@ -155,7 +157,9 @@
             "vasco",
             "español"
         ],
-        "thumbnail": "https://img.youtube.com/vi/DiLxQk7UkjY/hqdefault.jpg"
+        "thumbnail": "https://img.youtube.com/vi/DiLxQk7UkjY/hqdefault.jpg",
+        "category": "themoviesniper",
+        "playlist": "Terror"
     },
     {
         "id": "k6OIsLc7XFo",
@@ -170,7 +174,9 @@
             "vasco",
             "español"
         ],
-        "thumbnail": "https://img.youtube.com/vi/k6OIsLc7XFo/hqdefault.jpg"
+        "thumbnail": "https://img.youtube.com/vi/k6OIsLc7XFo/hqdefault.jpg",
+        "category": "themoviesniper",
+        "playlist": "Acción"
     },
     {
         "id": "iEG8OpqtCsE",
@@ -185,7 +191,9 @@
             "vasco",
             "español"
         ],
-        "thumbnail": "https://img.youtube.com/vi/iEG8OpqtCsE/hqdefault.jpg"
+        "thumbnail": "https://img.youtube.com/vi/iEG8OpqtCsE/hqdefault.jpg",
+        "category": "themoviesniper",
+        "playlist": "Terror"
     },
     {
         "id": "wULonOQ04qs",
@@ -200,7 +208,9 @@
             "vasco",
             "español"
         ],
-        "thumbnail": "https://img.youtube.com/vi/wULonOQ04qs/hqdefault.jpg"
+        "thumbnail": "https://img.youtube.com/vi/wULonOQ04qs/hqdefault.jpg",
+        "category": "themoviesniper",
+        "playlist": "Acción"
     },
     {
         "id": "kGryQ0cS-nA",
@@ -215,7 +225,9 @@
             "vasco",
             "español"
         ],
-        "thumbnail": "https://img.youtube.com/vi/kGryQ0cS-nA/hqdefault.jpg"
+        "thumbnail": "https://img.youtube.com/vi/kGryQ0cS-nA/hqdefault.jpg",
+        "category": "themoviesniper",
+        "playlist": "Acción"
     }
 ]
 
