@@ -94,35 +94,7 @@ body.addEventListener('click', (e) => {
         ]
     };
 
-    // Cargar playlists en select
-    function loadPlaylists() {
-        playlistSelect.innerHTML = '<option value="">Selecciona una lista</option>';
-        Object.keys(playlists).forEach(key => {
-            const option = document.createElement('option');
-            option.value = key;
-            option.textContent = key;
-            playlistSelect.appendChild(option);
-        });
-    }
-
-    loadPlaylists();
-
-    // Cambiar playlist
-    playlistSelect.addEventListener('change', (e) => {
-        const selected = e.target.value;
-        if (selected) {
-            const list = playlists[selected];
-            currentPlaylist.innerHTML = '';
-            list.forEach((video, index) => {
-                const li = document.createElement('li');
-                li.textContent = video.title;
-                li.addEventListener('click', () => playVideo(video.src));
-                currentPlaylist.appendChild(li);
-            });
-            // Reproducir el primero por default
-            if (list.length > 0) playVideo(list[0].src);
-        }
-    });
+   
 
     function playVideo(src) {
         videoPlayer.src = src;
