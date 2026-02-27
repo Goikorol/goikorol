@@ -932,11 +932,7 @@ footer {
     -webkit-appearance: none;
     -moz-appearance: none;
 
-    background: linear-gradient(
-        135deg,
-        rgba(114, 6, 190, 0.25),
-        rgba(141, 88, 241, 0.15)
-    );
+    background:(linear-gradient(135deg, rgb(114 6 190 / 16%), rgb(141 88 241 / 3%));
     color: #fff;
     border: 1px solid rgba(114, 6, 190, 0.4);
     border-radius: 10px;
