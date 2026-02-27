@@ -182,6 +182,7 @@ async function loadVideos() {
             filtered.forEach(video => {
                 const card = document.createElement('div');
                 card.className = 'video-card';
+                card.dataset.playlist = video.playlist;
                 card.onclick = () => {
                     window.location.href = `player.html?video=${video.id}`;
                 };
@@ -245,7 +246,7 @@ async function loadPlaylists() {
         document.querySelectorAll('[data-category="goikorol"] .video-card')
             .forEach(card => {
                 const matches =
-                    value === 'all' || card.innerHTML.includes(value);
+                    value === 'all' || card.dataset.playlist === value;
                 card.style.display = matches ? 'block' : 'none';
             });
     });
