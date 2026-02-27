@@ -1,99 +1,10 @@
-// script.js
+// ===============================
+// scripts.js
+// ===============================
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Header dinámico: Toggle menu para móvil
-    // Menú móvil animado
-const menuToggle = document.getElementById('menu-toggle');
-const mobileMenu = document.getElementById('mobile-menu');
-const body = document.body;
-
-if (menuToggle && mobileMenu) {
-    menuToggle.addEventListener('click', () => {
-        menuToggle.classList.toggle('active');
-        mobileMenu.classList.toggle('active');
-        body.classList.toggle('menu-open');
-    });
-
-    // Cerrar menú al hacer click en un enlace
-    document.querySelectorAll('#nav-menu-mobile a').forEach(link => {
-        link.addEventListener('click', () => {
-            menuToggle.classList.remove('active');
-            mobileMenu.classList.remove('active');
-            body.classList.remove('menu-open');
-        });
-    });
-
-    // Click fuera
-    body.addEventListener('click', (e) => {
-        if (
-            body.classList.contains('menu-open') &&
-            !mobileMenu.contains(e.target) &&
-            !menuToggle.contains(e.target)
-        ) {
-            menuToggle.classList.remove('active');
-            mobileMenu.classList.remove('active');
-            body.classList.remove('menu-open');
-        }
-    });
-}
-
-// Cerrar menú al hacer click en un enlace
-document.querySelectorAll('#nav-menu-mobile a').forEach(link => {
-    link.addEventListener('click', () => {
-        menuToggle.classList.remove('active');
-        mobileMenu.classList.remove('active');
-        body.classList.remove('menu-open');
-    });
-});
-
-// Cerrar menú al hacer click fuera (en el overlay)
-body.addEventListener('click', (e) => {
-    if (body.classList.contains('menu-open') && !mobileMenu.contains(e.target) && !menuToggle.contains(e.target)) {
-        menuToggle.classList.remove('active');
-        mobileMenu.classList.remove('active');
-        body.classList.remove('menu-open');
-    }
-});
-
-    // Función para agregar/quitar secciones en el header
-    function addHeaderSection(name, id) {
-        const li = document.createElement('li');
-        const a = document.createElement('a');
-        a.href = `#${id}`;
-        a.textContent = name;
-        li.appendChild(a);
-        navMenu.appendChild(li);
-    }
-
-    function removeHeaderSection(name) {
-        const items = navMenu.querySelectorAll('li');
-        items.forEach(item => {
-            if (item.textContent === name) {
-                item.remove();
-            }
-        });
-    }
-
-    // Ejemplo: Agregar una sección nueva (puedes llamar estas funciones desde consola o integrar en UI)
-    // addHeaderSection('Nueva Sección', 'new-section');
-
-    
-// SISTEMA DE TABS GLOBAL (funciona entre páginas)
-document.querySelectorAll('.tab-button').forEach(button => {
-    button.addEventListener('click', () => {
-        const tab = button.dataset.tab;
-
-        // Si NO estamos en index.html → navegar
-        if (!document.getElementById(tab)) {
-            window.location.href = `index.html#${tab}`;
-            return;
-        }
-
-        activateTab(tab);
-    });
-});
-
-// Activar tab
+// ===============================
+// TABS
+// ===============================
 function activateTab(tabId) {
     document.querySelectorAll('.tab-button').forEach(btn => {
         btn.classList.toggle('active', btn.dataset.tab === tabId);
@@ -104,7 +15,9 @@ function activateTab(tabId) {
     });
 }
 
-// Cargar videos desde videos.json
+// ===============================
+// CARGA DE VIDEOS
+// ===============================
 async function loadVideos() {
     const grids = document.querySelectorAll('.video-grid');
     if (!grids.length) return;
@@ -128,6 +41,7 @@ async function loadVideos() {
                 const card = document.createElement('div');
                 card.className = 'video-card';
                 card.dataset.playlist = video.playlist;
+
                 card.onclick = () => {
                     window.location.href = `player.html?video=${video.id}`;
                 };
@@ -153,7 +67,9 @@ async function loadVideos() {
     }
 }
 
-// Cargar playlists y filtros
+// ===============================
+// FILTROS DE PLAYLIST
+// ===============================
 async function loadPlaylists() {
     const selects = document.querySelectorAll('.playlist-filter');
     if (!selects.length) return;
@@ -196,7 +112,9 @@ async function loadPlaylists() {
     });
 }
 
-// ---------- INIT ----------
+// ===============================
+// INIT
+// ===============================
 document.addEventListener('DOMContentLoaded', () => {
 
     // ===== MENÚ MÓVIL =====
@@ -219,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        body.addEventListener('click', (e) => {
+        body.addEventListener('click', e => {
             if (
                 body.classList.contains('menu-open') &&
                 !mobileMenu.contains(e.target) &&
@@ -252,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
         activateTab(hash);
     }
 
-    // ===== VIDEOS Y FILTROS =====
+    // ===== CARGA INICIAL =====
     loadVideos();
     loadPlaylists();
 });
