@@ -215,3 +215,4 @@ async function loadPlaylists() {
 }
 
 document.addEventListener('DOMContentLoaded', loadPlaylists);
+});
