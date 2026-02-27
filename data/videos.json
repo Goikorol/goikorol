@@ -46,5 +46,54 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/O25zBqngQc0/hqdefault.jpg"
+    },
+    {
+        "id": "AObmYMaEt5w",
+        "title": "📺 LOS SIMULADORES T2E4 | El Clan Motul",
+        "description": "Seguimos con la Segunda Temporada de Los Simuladores; Episodio 4 El Clan Motul",
+        "date": "2026-02-17",
+        "tags": [
+            "series",
+            "simuladores",
+            "temporada 2",
+            "argentina",
+            "reacción",
+            "vasco",
+            "goikorol"
+        ],
+        "thumbnail": "https://img.youtube.com/vi/AObmYMaEt5w/hqdefault.jpg"
+    },
+    {
+        "id": "6maMBkx2jjs",
+        "title": "📺 LOS SIMULADORES T2E5 | El Vengador Infantil",
+        "description": "Seguimos con la Segunda Temporada de Los Simuladores; Episodio 5 El Vengador Infantil",
+        "date": "2026-02-19",
+        "tags": [
+            "series",
+            "simuladores",
+            "temporada 2",
+            "argentina",
+            "reacción",
+            "vasco",
+            "goikorol"
+        ],
+        "thumbnail": "https://img.youtube.com/vi/6maMBkx2jjs/hqdefault.jpg"
+    },
+    {
+        "id": "9jNvtN9wt-k",
+        "title": "📺 LOS SIMULADORES T2E6 | El Matrimonio Mixto",
+        "description": "Seguimos con la Segunda Temporada de Los Simuladores; Episodio 6 El Matrimonio Mixto",
+        "date": "2026-02-24",
+        "tags": [
+            "series",
+            "simuladores",
+            "temporada 2",
+            "argentina",
+            "reacción",
+            "vasco",
+            "goikorol"
+        ],
+        "thumbnail": "https://img.youtube.com/vi/9jNvtN9wt-k/hqdefault.jpg"
     }
+
 ]
