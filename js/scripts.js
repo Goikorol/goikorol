@@ -220,35 +220,44 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 async function loadPlaylists() {
-    const select = document.getElementById('playlist-filter');
-    if (!select) return;
+    const selects = document.querySelectorAll('.playlist-filter');
+    if (!selects.length) return;
 
     const response = await fetch('data/videos.json');
     const videos = await response.json();
 
-    const playlists = [
-        ...new Set(
-            videos
-                .filter(v => v.category === 'goikorol')
-                .map(v => v.playlist)
-        )
-    ];
+    selects.forEach(select => {
+        const category = select.dataset.category;
 
-    playlists.forEach(pl => {
-        const option = document.createElement('option');
-        option.value = pl;
-        option.textContent = pl;
-        select.appendChild(option);
-    });
+        const playlists = [
+            ...new Set(
+                videos
+                    .filter(v => v.category === category)
+                    .map(v => v.playlist)
+            )
+        ];
 
-    select.addEventListener('change', () => {
-        const value = select.value;
-        document.querySelectorAll('[data-category="goikorol"] .video-card')
-            .forEach(card => {
-                const matches =
-                    value === 'all' || card.dataset.playlist === value;
-                card.style.display = matches ? 'block' : 'none';
-            });
+        playlists.forEach(pl => {
+            const option = document.createElement('option');
+            option.value = pl;
+            option.textContent = pl;
+            select.appendChild(option);
+        });
+
+        select.addEventListener('change', () => {
+            const value = select.value;
+
+            document
+                .querySelectorAll(
+                    `.video-grid[data-category="${category}"] .video-card`
+                )
+                .forEach(card => {
+                    const show =
+                        value === 'all' || card.dataset.playlist === value;
+
+                    card.style.display = show ? 'block' : 'none';
+                });
+        });
     });
 }
 
