@@ -93,9 +93,12 @@
         <!-- Sección Videos - GRID estilo YouTube -->
         <section id="themoviesniper" class="tab-panel">
             <h2>The Movie Sniper</h2>
-            <select id="playlist-filter">
-            <option value="all">Todas las playlists</option>
-            </select>
+            <div class="playlist-filter-wrapper">
+                <label class="playlist-label">Playlist</label>
+                <select class="playlist-filter" data-category="themoviesniper">
+                    <option value="all">Todas las playlists</option>
+                </select>
+            </div>
             <div class="video-grid" data-category="themoviesniper"></div>
                             <!-- Los videos se cargarán aquí automáticamente -->
                 <p>Cargando videos...</p>
@@ -105,9 +108,12 @@
         <!-- Sección Videos - GRID estilo YouTube -->
         <section id="directos" class="tab-panel">
             <h2>Directos</h2>
-            <select id="playlist-filter">
-            <option value="all">Todas las playlists</option>
-            </select>
+           <div class="playlist-filter-wrapper">
+                <label class="playlist-label">Playlist</label>
+                <select class="playlist-filter" data-category="directos">
+                    <option value="all">Todas las playlists</option>
+                </select>
+            </div>
             <div class="video-grid" data-category="directos"></div>
             
                 <!-- Los videos se cargarán aquí automáticamente -->
@@ -118,9 +124,12 @@
         <!-- Sección Videos - GRID estilo YouTube -->
         <section id="gameplays" class="tab-panel">
             <h2>Gameplays</h2>
-            <select id="playlist-filter">
-            <option value="all">Todas las playlists</option>
-            </select>
+            <div class="playlist-filter-wrapper">
+                <label class="playlist-label">Playlist</label>
+                <select class="playlist-filter" data-category="gameplays">
+                    <option value="all">Todas las playlists</option>
+                </select>
+            </div>
             <div class="video-grid" data-category="gameplays"></div>
             
                 <!-- Los videos se cargarán aquí automáticamente -->
