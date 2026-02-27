@@ -161,51 +161,53 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Cargar videos dinámicamente desde videos.json
 async function loadVideos() {
-    const grid = document.getElementById('video-grid');
-    if (!grid) return; // Si no estamos en la página con videos, salir
+    const grids = document.querySelectorAll('.video-grid');
+    if (!grids.length) return;
 
     try {
         const response = await fetch('data/videos.json');
-        if (!response.ok) throw new Error('No se pudo cargar el archivo');
-        
         const videos = await response.json();
-        
-        grid.innerHTML = ''; // Limpiar mensaje de carga
 
-        if (videos.length === 0) {
-            grid.innerHTML = '<p>No hay videos aún. ¡Agrega algunos!</p>';
-            return;
-        }
+        grids.forEach(grid => {
+            const category = grid.dataset.category;
+            grid.innerHTML = '';
 
-        videos.forEach(video => {
-            const card = document.createElement('div');
-            card.className = 'video-card';
-            card.style.cursor = 'pointer';
-            card.onclick = () => {
-                window.location.href = `player.html?video=${video.id}`;
-            };
+            const filtered = videos.filter(v => v.category === category);
 
-            card.innerHTML = `
-                <div class="thumbnail">
-                    <img src="${video.thumbnail}" alt="${video.title}" loading="lazy">
-                    <div class="play-icon">▶</div>
-                </div>
-                <div class="video-info">
-                    <h3 class="video-title">${video.title}</h3>
-                    <p class="video-description">${video.description}</p>
-                    <p class="video-date">📅 ${video.date}</p>
-                </div>
-            `;
+            if (!filtered.length) {
+                grid.innerHTML = '<p>No hay videos todavía.</p>';
+                return;
+            }
 
+            filtered.forEach(video => {
+                const card = document.createElement('div');
+                card.className = 'video-card';
+                card.onclick = () => {
+                    window.location.href = `player.html?video=${video.id}`;
+                };
 
-            grid.appendChild(card);
+                card.innerHTML = `
+                    <div class="thumbnail">
+                        <img src="${video.thumbnail}" alt="${video.title}">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="video-info">
+                        <h3>${video.title}</h3>
+                        <p>${video.description}</p>
+                        <p class="video-date">📅 ${video.date}</p>
+                    </div>
+                `;
+
+                grid.appendChild(card);
+            });
         });
 
-    } catch (error) {
-        console.error('Error cargando videos:', error);
-        grid.innerHTML = `<p style="color: red;">Error al cargar videos: ${error.message}</p>`;
+    } catch (err) {
+        console.error(err);
     }
 }
+
+document.addEventListener('DOMContentLoaded', loadVideos);
 
 // Ejecutar cuando la página cargue
 document.addEventListener('DOMContentLoaded', loadVideos);
@@ -215,3 +217,38 @@ document.addEventListener('DOMContentLoaded', () => {
     loadVideos();
     // ... tu otro código de tabs, menú, etc.
 });
+
+async function loadPlaylists() {
+    const select = document.getElementById('playlist-filter');
+    if (!select) return;
+
+    const response = await fetch('data/videos.json');
+    const videos = await response.json();
+
+    const playlists = [
+        ...new Set(
+            videos
+                .filter(v => v.category === 'goikorol')
+                .map(v => v.playlist)
+        )
+    ];
+
+    playlists.forEach(pl => {
+        const option = document.createElement('option');
+        option.value = pl;
+        option.textContent = pl;
+        select.appendChild(option);
+    });
+
+    select.addEventListener('change', () => {
+        const value = select.value;
+        document.querySelectorAll('[data-category="goikorol"] .video-card')
+            .forEach(card => {
+                const matches =
+                    value === 'all' || card.innerHTML.includes(value);
+                card.style.display = matches ? 'block' : 'none';
+            });
+    });
+}
+
+document.addEventListener('DOMContentLoaded', loadPlaylists);
