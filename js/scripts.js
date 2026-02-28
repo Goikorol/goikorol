@@ -155,6 +155,8 @@ document.addEventListener('DOMContentLoaded', () => {
         button.addEventListener('click', () => {
             const tab = button.dataset.tab;
 
+             localStorage.setItem('activeTab', tab); // ✅ GUARDAR TAB
+
             if (!document.getElementById(tab)) {
                 window.location.href = `index.html#${tab}`;
                 return;
@@ -165,10 +167,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Activar tab desde hash
-    const hash = window.location.hash.replace('#', '');
-    if (hash) {
-        activateTab(hash);
-    }
+    const savedTab = localStorage.getItem('activeTab');
+const hash = window.location.hash.replace('#', '');
+
+if (hash) {
+    activateTab(hash);
+} else if (savedTab && document.getElementById(savedTab)) {
+    activateTab(savedTab);
+}
 
     // ===== CARGA INICIAL =====
     loadVideos();
