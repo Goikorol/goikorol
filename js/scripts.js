@@ -3,6 +3,11 @@
 // ===============================
 
 // ===============================
+// VARIABLES GLOBALES
+// ===============================
+let ALL_VIDEOS = [];
+
+// ===============================
 // TABS
 // ===============================
 function activateTab(tabId) {
@@ -25,6 +30,9 @@ async function loadVideos() {
     try {
         const response = await fetch('data/videos.json');
         const videos = await response.json();
+
+        // 🔹 Guardamos todos los videos para el buscador universal
+        ALL_VIDEOS = videos;
 
         grids.forEach(grid => {
             const category = grid.dataset.category;
@@ -113,6 +121,54 @@ async function loadPlaylists() {
 }
 
 // ===============================
+// BUSCADOR UNIVERSAL
+// ===============================
+function setupGlobalSearch() {
+    const input = document.getElementById('global-search');
+    const info = document.getElementById('search-results-info');
+    if (!input) return;
+
+    input.addEventListener('input', () => {
+        const query = input.value.toLowerCase().trim();
+        let totalResults = 0;
+
+        document.querySelectorAll('.video-card').forEach(card => {
+            const text = card.innerText.toLowerCase();
+            const match = text.includes(query);
+
+            card.style.display = match || !query ? 'block' : 'none';
+            if (match) totalResults++;
+        });
+
+        if (!query) {
+            info.textContent = '';
+            return;
+        }
+
+        info.textContent = `🎬 ${totalResults} resultado(s) encontrados`;
+        autoSwitchTab();
+    });
+}
+
+// ===============================
+// CAMBIO AUTOMÁTICO DE TAB
+// ===============================
+function autoSwitchTab() {
+    const visibleCards = document.querySelectorAll(
+        '.video-card:not([style*="display: none"])'
+    );
+
+    if (!visibleCards.length) return;
+
+    const firstCard = visibleCards[0];
+    const grid = firstCard.closest('.video-grid');
+    if (!grid) return;
+
+    const category = grid.dataset.category;
+    activateTab(category);
+}
+
+// ===============================
 // INIT
 // ===============================
 document.addEventListener('DOMContentLoaded', () => {
@@ -155,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
         button.addEventListener('click', () => {
             const tab = button.dataset.tab;
 
-             localStorage.setItem('activeTab', tab); // ✅ GUARDAR TAB
+            localStorage.setItem('activeTab', tab);
 
             if (!document.getElementById(tab)) {
                 window.location.href = `index.html#${tab}`;
@@ -166,17 +222,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Activar tab desde hash
+    // Activar tab desde hash o storage
     const savedTab = localStorage.getItem('activeTab');
-const hash = window.location.hash.replace('#', '');
+    const hash = window.location.hash.replace('#', '');
 
-if (hash) {
-    activateTab(hash);
-} else if (savedTab && document.getElementById(savedTab)) {
-    activateTab(savedTab);
-}
+    if (hash) {
+        activateTab(hash);
+    } else if (savedTab && document.getElementById(savedTab)) {
+        activateTab(savedTab);
+    }
 
     // ===== CARGA INICIAL =====
     loadVideos();
     loadPlaylists();
+    setupGlobalSearch(); // 🔍 BUSCADOR UNIVERSAL
 });
