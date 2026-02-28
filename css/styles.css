@@ -985,31 +985,94 @@ footer {
 
 
 /* =========================
-   BUSCADOR UNIVERSAL
+   BUSCADOR UNIVERSAL (PRO)
 ========================= */
 
 .global-search-wrapper {
-    max-width: 600px;
-    margin: 20px auto;
+    max-width: 720px;
+    margin: 24px auto 32px;
+    padding: 12px;
     text-align: center;
+
+    /* Glass effect */
+    background: rgba(20, 20, 20, 0.45);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
+/* INPUT */
 #global-search {
     width: 100%;
-    padding: 12px 16px;
+    padding: 14px 22px;
     font-size: 16px;
-    border-radius: 25px;
-    border: 1px solid #ccc;
+    font-weight: 400;
+
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
     outline: none;
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
+/* Placeholder */
+#global-search::placeholder {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+/* FOCUS */
 #global-search:focus {
-    border-color: #ff0000;
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 0, 0, 0.6);
+
+    box-shadow:
+        0 0 0 4px rgba(255, 0, 0, 0.15),
+        0 8px 24px rgba(255, 0, 0, 0.25);
 }
 
+/* INFO RESULTADOS */
 #search-results-info {
     display: block;
-    margin-top: 8px;
-    font-size: 14px;
-    color: #aaa;
+    margin-top: 10px;
+
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+
+    color: rgba(255, 255, 255, 0.65);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+    .global-search-wrapper {
+        margin: 16px 12px 24px;
+        padding: 10px;
+    }
+
+    #global-search {
+        font-size: 15px;
+        padding: 12px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    #global-search {
+        font-size: 14px;
+        padding: 11px 16px;
+    }
 }
