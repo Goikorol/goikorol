@@ -48,7 +48,7 @@
                 <input
                     type="text"
                     id="playlist"
-                    placeholder="Ej: Los Simuladores temporada 2"
+                    placeholder="Ej: Los Simuladores 2"
                     required
                 >
 
@@ -115,7 +115,9 @@
                 .split(',')
                 .map(t => t.trim())
                 .filter(Boolean),
-            thumbnail: `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`
+            thumbnail: `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`,
+            category: document.getElementById('category').value,
+            playlist: document.getElementById('playlist').value
         };
 
         // Evitar duplicados
