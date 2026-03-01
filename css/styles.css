@@ -1139,7 +1139,7 @@ footer {
     }
 
     .order-label {
-        display: none; /* solo icono en móvil */
+        font-size: 12px; /* solo icono en móvil */
     }
 }
 
