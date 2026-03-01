@@ -261,5 +261,15 @@ function sortGridByDate(category, oldestFirst) {
             : dateB - dateA;
     });
 
+    // ===== ORDEN POR FECHA =====
+document.querySelectorAll('.order-toggle').forEach(toggle => {
+    toggle.addEventListener('change', () => {
+        const category = toggle.dataset.category;
+        const oldestFirst = toggle.checked;
+
+        sortGridByDate(category, oldestFirst);
+    });
+});
+
     cards.forEach(card => grid.appendChild(card));
 }
