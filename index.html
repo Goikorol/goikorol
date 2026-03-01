@@ -79,32 +79,37 @@
     <main class="tab-content">
 
         <!-- Sección Inicio -->
-        <section id="home" class="tab-panel active">
-            <h1>Goikorol</h1>
-            <p class="home-tagline">
-                🎬 Reacciones, videojuegos y cine sin caretas
-            </p>
+       <section id="home" class="tab-panel active home-section">
 
-            <div class="home-actions">
-                <a href="#goikorol" class="btn primary">▶ Ver videos</a>
-                <a href="https://www.twitch.tv/goikorol" target="_blank" class="btn secondary">🔴 Twitch en vivo</a>
+            <div class="home-intro">
+                <h1>Bienvenidos a Goikorol</h1>
+                <p>
+                    ☣️ Reacciones, gameplays, cine, música y charlas sin filtro.
+                    <br>
+                    Contenido real, humor ácido y mucha pasión por lo que hago.
+                </p>
             </div>
 
-            <hr>
+            <!-- VIDEO DESTACADO -->
+            <section class="home-block featured-video">
+                <h2>🎬 Video Destacado</h2>
 
-            <h2>¿Quién soy?</h2>
-            <p>
-                Reaccionador, gamer y rolero desde hace más de 30 años.
-                Cine, música, videojuegos y charlas con la comunidad.
-            </p>
+                <div class="home-video-card" id="featured-video">
+                    <!-- Se inyecta por JS -->
+                    <p class="loading-text">Cargando video destacado...</p>
+                </div>
+            </section>
 
-            <hr>
+            <!-- ÚLTIMO VIDEO -->
+            <section class="home-block latest-video">
+                <h2>🆕 Último Video</h2>
 
-            <h2>La comunidad</h2>
-            <p>
-                Una comunidad careta, intensa y con mucho humor.
-                Sumate a los directos y al Discord.
-            </p>
+                <div class="home-video-card" id="latest-video">
+                    <!-- Se inyecta por JS -->
+                    <p class="loading-text">Cargando último video...</p>
+                </div>
+            </section>
+
         </section>
 
         <!-- Sección Videos - GRID estilo YouTube -->
