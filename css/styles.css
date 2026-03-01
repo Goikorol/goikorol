@@ -152,6 +152,8 @@ footer {
     font-size: 1.8em;
     font-weight: bold;
     color: var(--text-light);
+    text-decoration: none;
+
 }
 
 /* Hero Banner */
