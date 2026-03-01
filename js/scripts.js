@@ -40,6 +40,9 @@ async function loadVideos() {
         // 🔹 Guardamos todos los videos para el buscador universal
         ALL_VIDEOS = videos;
 
+        // Render Home (destacado + último)
+        renderHomeVideos();
+
         grids.forEach(grid => {
             const category = grid.dataset.category;
             grid.innerHTML = '';
@@ -355,15 +358,6 @@ function createHomeVideoCard(video) {
     `;
 }
 
-
-/* ===============================
-   HOME – VIDEO DESTACADO + ÚLTIMO
-=============================== */
-
-document.addEventListener("DOMContentLoaded", () => {
-    renderFeaturedVideo();
-    renderLatestVideo();
-});
 
 function renderFeaturedVideo() {
     const container = document.getElementById("featured-video");
