@@ -7,6 +7,12 @@
 // ===============================
 let ALL_VIDEOS = [];
 
+/* ===============================
+   CONFIG HOME
+=============================== */
+
+// 👉 PEGÁ ACÁ el ID del video destacado (YouTube ID)
+const FEATURED_VIDEO_ID = "weC3mxr0s8s";
 // ===============================
 // TABS
 // ===============================
@@ -299,14 +305,6 @@ if (toTopBtn) {
 });
 
 
-
-// ===============================
-// HOME: VIDEO DESTACADO + ÚLTIMO VIDEO
-// ===============================
-
-// 👉 ELEGÍ ACÁ TU VIDEO DESTACADO (ID de YouTube)
-const FEATURED_VIDEO_ID = "eF1k6hacZJ4"; // ← cambialo cuando quieras
-
 function renderHomeVideos() {
     const featuredContainer = document.getElementById("featured-video");
     const latestContainer = document.getElementById("latest-video");
@@ -352,6 +350,62 @@ function createHomeVideoCard(video) {
                 <h3>${video.title}</h3>
                 <p>${video.description || ""}</p>
                 <p class="video-date">📅 ${video.date}</p>
+            </div>
+        </div>
+    `;
+}
+
+
+/* ===============================
+   HOME – VIDEO DESTACADO + ÚLTIMO
+=============================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+    renderFeaturedVideo();
+    renderLatestVideo();
+});
+
+function renderFeaturedVideo() {
+    const container = document.getElementById("featured-video");
+    if (!container || !FEATURED_VIDEO_ID) return;
+
+    const video = findVideoById(FEATURED_VIDEO_ID);
+    if (!video) {
+        container.innerHTML = "<p class='loading-text'>Video destacado no encontrado</p>";
+        return;
+    }
+
+    container.innerHTML = createHomeVideoCard(video);
+}
+
+function renderLatestVideo() {
+    const container = document.getElementById("latest-video");
+    if (!container || !allVideos.length) return;
+
+    const latest = [...allVideos].sort((a, b) =>
+        new Date(b.date) - new Date(a.date)
+    )[0];
+
+    container.innerHTML = createHomeVideoCard(latest);
+}
+
+/* UTILIDADES */
+
+function findVideoById(videoId) {
+    return allVideos.find(video => video.id === videoId);
+}
+
+function createHomeVideoCard(video) {
+    return `
+        <div class="video-card home-video" onclick="openPlayer('${video.id}')">
+            <div class="thumbnail">
+                <img src="${video.thumbnail}" alt="${video.title}">
+                <div class="play-icon">▶</div>
+            </div>
+            <div class="video-info">
+                <h3>${video.title}</h3>
+                <p>${video.channel}</p>
+                <div class="video-date">${video.date}</div>
             </div>
         </div>
     `;
