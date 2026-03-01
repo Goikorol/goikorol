@@ -770,6 +770,31 @@
         "playlist": "El Eternauta"
     },
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     {
         "id": "h7qBIF6PhLA",
         "title": "✅ Reacción!! | SERÚ GIRÁN (Charly García) | PRIMER ÁLBUM",
@@ -1470,6 +1495,34 @@
         "category": "directos",
         "playlist": "Patricio Rey y sus Redonditos de Ricota"
     },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
      {
         "id": "UcJJ152ra5k",
         "title": "🧟 Los ZOMBIROS no me dejan en paz | The Infected ☠️",
@@ -1623,6 +1676,99 @@
         "thumbnail": "https://img.youtube.com/vi/3s2CS3EYgjk/hqdefault.jpg",
         "category": "gameplays",
         "playlist": "Oblivion Remastered"
+    },
+     {
+        "id": "TJKa2WJUE4M",
+        "title": "Se complica el asunto 😱💀 Gameplay Español #7",
+        "description": "Probamos el Project Zomboid",
+        "date": "2022-11-15",
+        "tags": [
+            "gameplays. goikorol",
+            "zomboid"
+        ],
+        "thumbnail": "https://img.youtube.com/vi/TJKa2WJUE4M/hqdefault.jpg",
+        "category": "gameplays",
+        "playlist": "Project Zomboid"
+    },
+    {
+        "id": "j9yPXcy3e6Y",
+        "title": "PROJECT ZOMBOID 😱💀 Gameplay Español #6",
+        "description": "Probamos el Project Zomboid\n",
+        "date": "2025-11-09",
+        "tags": [
+            "gampleys",
+            "goikorol",
+            "zomboid"
+        ],
+        "thumbnail": "https://img.youtube.com/vi/j9yPXcy3e6Y/hqdefault.jpg",
+        "category": "gameplays",
+        "playlist": "Project Zomboid"
+    },
+    {
+        "id": "vGq3o02TKuE",
+        "title": "Buscando SERRUCHO | PROJECT ZOMBOID 😱💀 Gameplay Español #5",
+        "description": "Probamos el Project Zomboid\n",
+        "date": "2022-11-07",
+        "tags": [
+            "gameplays",
+            "goikorol",
+            "zomboid"
+        ],
+        "thumbnail": "https://img.youtube.com/vi/vGq3o02TKuE/hqdefault.jpg",
+        "category": "gameplays",
+        "playlist": "Project Zomboid"
+    },
+    {
+        "id": "rDBJrauVprE",
+        "title": "Una NUEVA VIDA | PROJECT ZOMBOID 😱💀 Gameplay Español #4",
+        "description": "Probamos el Project Zomboid\n",
+        "date": "2022-10-13",
+        "tags": [
+            "gameplays. goikorol",
+            "zomboid"
+        ],
+        "thumbnail": "https://img.youtube.com/vi/rDBJrauVprE/hqdefault.jpg",
+        "category": "gameplays",
+        "playlist": "Project Zomboid"
+    },
+    {
+        "id": "aZl2ofwem2s",
+        "title": "Un BUEN día para MORIR | PROJECT ZOMBOID 😱💀 Gameplay Español #3",
+        "description": "Probamos el Project Zomboid\n",
+        "date": "2022-10-11",
+        "tags": [
+            "gameplays. goikorol",
+            "zomboid"
+        ],
+        "thumbnail": "https://img.youtube.com/vi/aZl2ofwem2s/hqdefault.jpg",
+        "category": "gameplays",
+        "playlist": "Project Zomboid"
+    },
+    {
+        "id": "yrDUVqQmjd0",
+        "title": "SOBREVIVO 1 DÍA | PROJECT ZOMBOID 😱💀 Gameplay Español #2",
+        "description": "Probamos el Project Zomboid\n",
+        "date": "2022-10-07",
+        "tags": [
+            "gameplays. goikorol",
+            "zomboid"
+        ],
+        "thumbnail": "https://img.youtube.com/vi/yrDUVqQmjd0/hqdefault.jpg",
+        "category": "gameplays",
+        "playlist": "Project Zomboid"
+    },
+    {
+        "id": "eF1k6hacZJ4",
+        "title": "ESTRENAMOS PROJECT ZOMBOID 😱💀 Gameplay Español #1",
+        "description": "Probamos el Project Zomboid\n",
+        "date": "2022-09-07",
+        "tags": [
+            "gameplays. goikorol",
+            "zomboid"
+        ],
+        "thumbnail": "https://img.youtube.com/vi/eF1k6hacZJ4/hqdefault.jpg",
+        "category": "gameplays",
+        "playlist": "Project Zomboid"
     }
 
 
