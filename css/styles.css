@@ -475,17 +475,7 @@ footer {
     transform: scale(1.1);
 }
 
-.duration {
-    position: absolute;
-    bottom: 8px;
-    right: 8px;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-size: 0.9em;
-    font-weight: bold;
-}
+
 
 .video-info {
     padding: 15px;
