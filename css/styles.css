@@ -1200,4 +1200,7 @@ footer {
         height: 40px;
         font-size: 16px;
     }
+    #toTopBtn:hover {
+    background: none
+}
 }
