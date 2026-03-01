@@ -297,3 +297,62 @@ if (toTopBtn) {
     });
 }
 });
+
+
+
+// ===============================
+// HOME: VIDEO DESTACADO + ÚLTIMO VIDEO
+// ===============================
+
+// 👉 ELEGÍ ACÁ TU VIDEO DESTACADO (ID de YouTube)
+const FEATURED_VIDEO_ID = "eF1k6hacZJ4"; // ← cambialo cuando quieras
+
+function renderHomeVideos() {
+    const featuredContainer = document.getElementById("featured-video");
+    const latestContainer = document.getElementById("latest-video");
+
+    if (!featuredContainer || !latestContainer || !ALL_VIDEOS.length) return;
+
+    // ===============================
+    // VIDEO DESTACADO (MANUAL)
+    // ===============================
+    const featuredVideo = ALL_VIDEOS.find(
+        v => v.id === FEATURED_VIDEO_ID
+    );
+
+    if (featuredVideo) {
+        featuredContainer.innerHTML = createHomeVideoCard(featuredVideo);
+    } else {
+        featuredContainer.innerHTML =
+            "<p class='loading-text'>Video destacado no encontrado.</p>";
+    }
+
+    // ===============================
+    // ÚLTIMO VIDEO (AUTOMÁTICO)
+    // ===============================
+    const latestVideo = [...ALL_VIDEOS]
+        .sort((a, b) => new Date(b.date) - new Date(a.date))[0];
+
+    if (latestVideo) {
+        latestContainer.innerHTML = createHomeVideoCard(latestVideo);
+    }
+}
+
+// ===============================
+// TEMPLATE CARD HOME
+// ===============================
+function createHomeVideoCard(video) {
+    return `
+        <div class="video-card home-video" onclick="location.href='player.html?video=${video.id}'">
+            <div class="thumbnail">
+                <img src="${video.thumbnail}" alt="${video.title}">
+                <div class="play-icon">▶</div>
+            </div>
+            <div class="video-info">
+                <h3>${video.title}</h3>
+                <p>${video.description || ""}</p>
+                <p class="video-date">📅 ${video.date}</p>
+            </div>
+        </div>
+    `;
+}
