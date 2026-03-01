@@ -1364,3 +1364,83 @@ footer {
         font-size: 1.2em;
     }
 }
+
+
+/* ===============================
+   HOME – ANUNCIOS
+=============================== */
+
+.home-announcements {
+    margin-top: 40px;
+    padding: 25px;
+    border-radius: 16px;
+    background: rgba(20, 20, 25, 0.45);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(114, 6, 190, 0.25);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.home-announcements h2 {
+    margin-bottom: 20px;
+    color: var(--twitch-purple);
+    font-size: 1.6em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.announcement-card {
+    background: rgba(30, 30, 40, 0.6);
+    border-radius: 12px;
+    padding: 15px 18px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    border-left: 4px solid var(--twitch-purple);
+}
+
+.announcement-card:hover {
+    transform: translateX(6px);
+    box-shadow: 0 0 20px rgba(114, 6, 190, 0.4);
+}
+
+.announcement-card p {
+    margin: 8px 0 0;
+    color: #ddd;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/* Tags */
+.announcement-tag {
+    display: inline-block;
+    font-size: 0.75em;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+.announcement-tag.live {
+    background: linear-gradient(135deg, #ff0033, #ff5a5a);
+}
+
+.announcement-tag.upcoming {
+    background: linear-gradient(135deg, #7206be, #8d58f1);
+}
+
+.announcement-tag.info {
+    background: linear-gradient(135deg, #444, #666);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .home-announcements {
+        padding: 20px;
+    }
+
+    .announcement-card {
+        padding: 14px;
+    }
+}
