@@ -1422,12 +1422,13 @@ footer {
     color: #fff;
 }
 
+
 .announcement-tag.live {
-    background: linear-gradient(135deg, #ff0033, #ff5a5a);
+    background: linear-gradient(135deg, #7206be, #8d58f1);
 }
 
 .announcement-tag.upcoming {
-    background: linear-gradient(135deg, #7206be, #8d58f1);
+    background: linear-gradient(135deg, #ff0033, #ff5a5a);
 }
 
 .announcement-tag.info {
