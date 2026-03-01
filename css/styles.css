@@ -1445,3 +1445,41 @@ footer {
         padding: 14px;
     }
 }
+/* ===============================
+   ANUNCIOS – LINKS ESTILIZADOS
+=============================== */
+
+.home-announcements a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.25s ease;
+}
+
+/* Subrayado elegante animado */
+.home-announcements a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        #ff3c3c,
+        #ff8a3c
+    );
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease;
+    border-radius: 2px;
+}
+
+.home-announcements a:hover {
+    color: #ffffff;
+}
+
+.home-announcements a:hover::after {
+    transform: scaleX(1);
+}
