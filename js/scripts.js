@@ -42,6 +42,7 @@ async function loadVideos() {
 
         // Render Home (destacado + último)
         renderHomeVideos();
+        renderLatestVideosAnnouncements();
 
         grids.forEach(grid => {
             const category = grid.dataset.category;
@@ -403,4 +404,42 @@ function createHomeVideoCard(video) {
             </div>
         </div>
     `;
+}
+
+
+
+// ===============================
+// ANUNCIOS – ÚLTIMOS VIDEOS POR SECCIÓN
+// ===============================
+function renderLatestVideosAnnouncements() {
+    if (!ALL_VIDEOS.length) return;
+
+    const categories = [
+        { key: "goikorol", label: "Goikorol", el: "latest-goikorol" },
+        { key: "themoviesniper", label: "The Movie Sniper", el: "latest-moviesniper" },
+        { key: "gameplays", label: "Gameplays", el: "latest-gameplays" }
+    ];
+
+    categories.forEach(cat => {
+        const container = document.getElementById(cat.el);
+        if (!container) return;
+
+        const videos = ALL_VIDEOS
+            .filter(v => v.category === cat.key)
+            .sort((a, b) => new Date(b.date) - new Date(a.date));
+
+        if (!videos.length) {
+            container.textContent = `${cat.label}: sin videos todavía`;
+            return;
+        }
+
+        const latest = videos[0];
+
+        container.innerHTML = `
+            <strong>${cat.label}:</strong>
+            <a href="player.html?video=${latest.id}">
+                ${latest.title}
+            </a>
+        `;
+    });
 }
