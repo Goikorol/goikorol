@@ -1060,18 +1060,37 @@ footer {
 
 
 /* =========================
-   SWITCH ORDEN POR FECHA
+   SWITCH ORDEN POR FECHA (PRO)
 ========================= */
+
+.playlist-filter-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
 
 .order-switch {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    margin-left: 16px;
     cursor: pointer;
     user-select: none;
+
     font-size: 13px;
-    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.75);
+
+    background: rgba(255, 255, 255, 0.05);
+    padding: 6px 10px;
+    border-radius: 999px;
+    backdrop-filter: blur(6px);
+
+    transition: background 0.25s ease;
+}
+
+.order-switch:hover {
+    background: rgba(255, 255, 255, 0.08);
 }
 
 .order-switch input {
@@ -1081,9 +1100,9 @@ footer {
 /* Slider */
 .order-switch .slider {
     position: relative;
-    width: 36px;
+    width: 34px;
     height: 18px;
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.3);
     border-radius: 999px;
     transition: background 0.25s ease;
 }
@@ -1102,13 +1121,24 @@ footer {
 
 /* Checked */
 .order-switch input:checked + .slider {
-    background: rgba(255, 0, 0, 0.7);
+    background: rgba(255, 0, 0, 0.75);
 }
 
 .order-switch input:checked + .slider::before {
-    transform: translateX(18px);
+    transform: translateX(16px);
 }
 
 .order-switch .order-label {
     white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .playlist-filter-wrapper {
+        gap: 10px;
+    }
+
+    .order-label {
+        display: none; /* solo icono en móvil */
+    }
 }
