@@ -1396,22 +1396,12 @@ footer {
     padding: 15px 18px;
     margin-bottom: 15px;
     transition: all 0.3s ease;
-    border-left: 4px rgba(114, 6, 190, 0.4);
+    border-left: 4px solid var(--twitch-purple);
 }
 
 .announcement-card:hover {
     transform: translateX(6px);
     box-shadow: 0 0 20px rgba(114, 6, 190, 0.4);
-}
-
-.announcement-card .announcement-tag.live{
-    border-left: 4px #6102a5;
-}
-.announcement-card .announcement-tag.announcement-tag.upcoming{
-    border-left: 4px #963dd6;
-}
-.announcement-card .announcement-tag.announcement-tag.info{
-    border-left: 4px #c690ec;
 }
 
 .announcement-card p {
