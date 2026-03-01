@@ -331,12 +331,12 @@ function renderHomeVideos() {
     // ===============================
     // ÚLTIMO VIDEO (AUTOMÁTICO)
     // ===============================
-    const latestVideo = [...ALL_VIDEOS]
-        .sort((a, b) => new Date(b.date) - new Date(a.date))[0];
-
-    if (latestVideo) {
-        latestContainer.innerHTML = createHomeVideoCard(latestVideo);
-    }
+//    const latestVideo = [...ALL_VIDEOS]
+//        .sort((a, b) => new Date(b.date) - new Date(a.date))[0];
+//
+//    if (latestVideo) {
+//        latestContainer.innerHTML = createHomeVideoCard(latestVideo);
+//    }
 }
 
 // ===============================
