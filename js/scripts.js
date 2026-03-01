@@ -391,7 +391,7 @@ function findVideoById(videoId) {
 
 function createHomeVideoCard(video) {
     return `
-        <div class="video-card home-video" onclick="openPlayer('${video.id}')">
+        <div class="video-card home-video" onclick="location.href='player.html?video=${video.id}'">
             <div class="thumbnail">
                 <img src="${video.thumbnail}" alt="${video.title}">
                 <div class="play-icon">▶</div>
