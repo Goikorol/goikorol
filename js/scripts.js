@@ -237,3 +237,29 @@ document.addEventListener('DOMContentLoaded', () => {
     loadPlaylists();
     setupGlobalSearch(); // 🔍 BUSCADOR UNIVERSAL
 });
+
+
+
+function sortGridByDate(category, oldestFirst) {
+    const grid = document.querySelector(
+        `.video-grid[data-category="${category}"]`
+    );
+    if (!grid) return;
+
+    const cards = Array.from(grid.children);
+
+    cards.sort((a, b) => {
+        const dateA = new Date(
+            a.querySelector('.video-date').textContent.replace('📅 ', '')
+        );
+        const dateB = new Date(
+            b.querySelector('.video-date').textContent.replace('📅 ', '')
+        );
+
+        return oldestFirst
+            ? dateA - dateB
+            : dateB - dateA;
+    });
+
+    cards.forEach(card => grid.appendChild(card));
+}
