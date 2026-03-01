@@ -1390,7 +1390,19 @@ footer {
     gap: 10px;
 }
 
+.announcement-card {
+    background: rgba(30, 30, 40, 0.6);
+    border-radius: 12px;
+    padding: 15px 18px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    border-left: 4px solid var(--twitch-purple);
+}
 
+.announcement-card:hover {
+    transform: translateX(6px);
+    box-shadow: 0 0 20px rgba(114, 6, 190, 0.4);
+}
 
 .announcement-card p {
     margin: 8px 0 0;
