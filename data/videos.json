@@ -753,7 +753,177 @@
         "thumbnail": "https://img.youtube.com/vi/fdvryBO-wLU/hqdefault.jpg",
         "category": "goikorol",
         "playlist": "El Eternauta"
+    },
+
+    {
+        "id": "h7qBIF6PhLA",
+        "title": "✅ Reacción!! | SERÚ GIRÁN (Charly García) | PRIMER ÁLBUM",
+        "description": "Reacciono a Serú Girán y su primer álbum desde mi canal de Twitch.",
+        "date": "2021-03-01",
+        "tags": [
+            "musica",
+            "reaccion",
+            "charly garcia",
+            "seru giran"
+        ],
+        "thumbnail": "https://img.youtube.com/vi/h7qBIF6PhLA/hqdefault.jpg",
+        "category": "directos",
+        "playlist": "Seru Giran"
+    },
+    {
+        "id": "bE6AgPePB60",
+        "title": "💥 REACCION CATUPECU MACHU | HOMENAJE A GABRIEL RUIZ",
+        "description": "Directo reaccionando a Catupecu Machu en homenaje a Gabriel Ruiz",
+        "date": "2021-03-02",
+        "tags": [
+            "musica",
+            "reaccion",
+            "catupecu machu"
+        ],
+        "thumbnail": "https://img.youtube.com/vi/bE6AgPePB60/hqdefault.jpg",
+        "category": "directos",
+        "playlist": "Catupecu Machu"
+    },
+    {
+        "id": "n3boxHqHbR8",
+        "title": "😱 Reacción!! | 🎼 A 18' DEL SOL (Spinetta)",
+        "description": "Escuchamos A 18 minutos del sol de Spinetta.\n",
+        "date": "2021-03-03",
+        "tags": [
+            "musica",
+            "reaccion",
+            "spinetta"
+        ],
+        "thumbnail": "https://img.youtube.com/vi/n3boxHqHbR8/hqdefault.jpg",
+        "category": "directos",
+        "playlist": "Luis Alberto Spinetta"
+    },
+    {
+        "id": "qUsH-LMVmNY",
+        "title": "💥 Reacción!! | 🎼 EL RELOJ 2 |",
+        "description": "Escuchamos el segundo álbum completo El Reloj\n",
+        "date": "2021-03-04",
+        "tags": [
+            "musica",
+            "reaccion",
+            "el reloj"
+        ],
+        "thumbnail": "https://img.youtube.com/vi/qUsH-LMVmNY/hqdefault.jpg",
+        "category": "directos",
+        "playlist": "El Reloj"
+    },
+    {
+        "id": "195-c8KiZQM",
+        "title": "REACCIÓN!!! | ANDREA ÁLVAREZ 🌻",
+        "description": "Reacciono a Andrea Álvarez por primera vez.\n",
+        "date": "2021-03-05",
+        "tags": [
+            "musica",
+            "reaccion",
+            "andrea alvarez"
+        ],
+        "thumbnail": "https://img.youtube.com/vi/195-c8KiZQM/hqdefault.jpg",
+        "category": "directos",
+        "playlist": "Martes de Chicas"
+    },
+    {
+        "id": "NY1FNKOqQ2w",
+        "title": "😱 Reacción!! | 🎼 ALMA DE DIAMANTE (Spinetta) JADE",
+        "description": "Escuchamos Alma de Diamante de Spinetta Jade.\n",
+        "date": "2025-03-11",
+        "tags": [
+            "musica",
+            "reaccion",
+            "spinetta jade"
+        ],
+        "thumbnail": "https://img.youtube.com/vi/NY1FNKOqQ2w/hqdefault.jpg",
+        "category": "directos",
+        "playlist": "Spinetta Jade"
+    },
+    {
+        "id": "pIlMCdn-VnQ",
+        "title": "💥 Reacción!! | 🎼 DIVIDIDOS | ACARICIANDO lo ASPERO",
+        "description": "Escuchamos Acariciando lo aspero de Divididos.\n",
+        "date": "2025-03-12",
+        "tags": [
+            "musica",
+            "reaccion",
+            "divididos"
+        ],
+        "thumbnail": "https://img.youtube.com/vi/pIlMCdn-VnQ/hqdefault.jpg",
+        "category": "directos",
+        "playlist": "Divididos"
+    },
+    {
+        "id": "4oxQaxa-FsE",
+        "title": "💥 Reacción!! | 🎼 PAPPO'S BLUES | VOL. II",
+        "description": "Escuchamos el VOL 2 de Pappo's Blues\n",
+        "date": "2025-03-13",
+        "tags": [
+            "musica",
+            "reaccion",
+            "pappos blues"
+        ],
+        "thumbnail": "https://img.youtube.com/vi/4oxQaxa-FsE/hqdefault.jpg",
+        "category": "directos",
+        "playlist": "Pappo's Blues"
+    },
+    {
+        "id": "Rqejc-Kv_b8",
+        "title": "✅ Reacción!! | SERÚ GIRÁN (Charly García) | LA GRASA DE LAS CAPITALES",
+        "description": "Reacciono a Serú Girán y La Grasa de las Capitales desde mi canal de Twitch.\n",
+        "date": "2025-03-14",
+        "tags": [
+            "nusica",
+            "reaccion",
+            "seru giran"
+        ],
+        "thumbnail": "https://img.youtube.com/vi/Rqejc-Kv_b8/hqdefault.jpg",
+        "category": "directos",
+        "playlist": "Serú Girán"
+    },
+    {
+        "id": "qeSc-0odlwA",
+        "title": "✅ Reacción!! | SERÚ GIRÁN (Charly García) | BICICLETA",
+        "description": "Reacciono a Serú Girán y Bicicleta desde mi canal de Twitch.\n",
+        "date": "2021-03-15",
+        "tags": [
+            "nusica",
+            "reaccion",
+            "seru giran"
+        ],
+        "thumbnail": "https://img.youtube.com/vi/qeSc-0odlwA/hqdefault.jpg",
+        "category": "directos",
+        "playlist": "Serú Girán"
+    },
+    {
+        "id": "0UL-EBcOpyw",
+        "title": "REACCIÓN!!! | GABRIELA EPUMER 🌻",
+        "description": "Reacciono a Gabriela Epumer por primera vez.",
+        "date": "2021-03-16",
+        "tags": [
+            "musica",
+            "reaccion",
+            "maria gabriela epumer"
+        ],
+        "thumbnail": "https://img.youtube.com/vi/0UL-EBcOpyw/hqdefault.jpg",
+        "category": "directos",
+        "playlist": "María Gabriela Epumer"
+    },
+    {
+        "id": "Leai1rTG3aI",
+        "title": "😎 REACCIÓN el TESORO de los INOCENTES | INDIO SOLARI Y LOS FUNDAMENTALISTAS DEL AIRE ACONDICIONADO",
+        "description": "Reacciono a El tesoro de los inocentes del Indio Solari y los Fundamentalistas del Aire Acondicionado. Directo resubido de Twitch\n",
+        "date": "2021-03-17",
+        "tags": [
+            "musica",
+            "reaccion"
+        ],
+        "thumbnail": "https://img.youtube.com/vi/Leai1rTG3aI/hqdefault.jpg",
+        "category": "directos",
+        "playlist": "Los Fundamentalistas del Aire Acondicionado"
     }
+
 
 
 ]
