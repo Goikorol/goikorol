@@ -261,7 +261,11 @@ function sortGridByDate(category, oldestFirst) {
             : dateB - dateA;
     });
 
-    // ===== ORDEN POR FECHA =====
+    
+
+    cards.forEach(card => grid.appendChild(card));
+}
+// ===== ORDEN POR FECHA =====
 document.querySelectorAll('.order-toggle').forEach(toggle => {
     toggle.addEventListener('change', () => {
         const category = toggle.dataset.category;
@@ -270,6 +274,3 @@ document.querySelectorAll('.order-toggle').forEach(toggle => {
         sortGridByDate(category, oldestFirst);
     });
 });
-
-    cards.forEach(card => grid.appendChild(card));
-}
