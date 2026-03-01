@@ -312,7 +312,7 @@ function renderHomeVideos() {
     const featuredContainer = document.getElementById("featured-video");
 //  const latestContainer = document.getElementById("latest-video");
 
-    if (!featuredContainer || !latestContainer || !ALL_VIDEOS.length) return;
+ //   if (!featuredContainer || !latestContainer || !ALL_VIDEOS.length) return;
 
     // ===============================
     // VIDEO DESTACADO (MANUAL)
