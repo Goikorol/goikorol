@@ -152,8 +152,12 @@ footer {
     font-size: 1.8em;
     font-weight: bold;
     color: var(--text-light);
-    text-decoration: none;
+}
 
+/* Quitar subrayado y color de links del logo */
+.logo-container a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Hero Banner */
