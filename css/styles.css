@@ -1404,6 +1404,21 @@ footer {
     box-shadow: 0 0 20px rgba(114, 6, 190, 0.4);
 }
 
+/* 1️⃣ TARJETA – principal */
+.home-announcements .announcement-card:nth-child(2) {
+    border-left-color: rgba(145, 70, 255, 0.9);
+}
+
+/* 2️⃣ TARJETA – intermedia */
+.home-announcements .announcement-card:nth-child(3) {
+    border-left-color: rgba(145, 70, 255, 0.55);
+}
+
+/* 3️⃣ TARJETA – más sutil */
+.home-announcements .announcement-card:nth-child(4) {
+    border-left-color: rgba(145, 70, 255, 0.3);
+}
+
 .announcement-card p {
     margin: 8px 0 0;
     color: #ddd;
