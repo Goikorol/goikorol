@@ -310,7 +310,7 @@ if (toTopBtn) {
 
 function renderHomeVideos() {
     const featuredContainer = document.getElementById("featured-video");
-    const latestContainer = document.getElementById("latest-video");
+  //const latestContainer = document.getElementById("latest-video");
 
     if (!featuredContainer || !latestContainer || !ALL_VIDEOS.length) return;
 
@@ -358,49 +358,3 @@ function createHomeVideoCard(video) {
     `;
 }
 
-
-function renderFeaturedVideo() {
-    const container = document.getElementById("featured-video");
-    if (!container || !FEATURED_VIDEO_ID) return;
-
-    const video = findVideoById(FEATURED_VIDEO_ID);
-    if (!video) {
-        container.innerHTML = "<p class='loading-text'>Video destacado no encontrado</p>";
-        return;
-    }
-
-    container.innerHTML = createHomeVideoCard(video);
-}
-
-function renderLatestVideo() {
-    const container = document.getElementById("latest-video");
-    if (!container || !allVideos.length) return;
-
-    const latest = [...allVideos].sort((a, b) =>
-        new Date(b.date) - new Date(a.date)
-    )[0];
-
-    container.innerHTML = createHomeVideoCard(latest);
-}
-
-/* UTILIDADES */
-
-function findVideoById(videoId) {
-    return allVideos.find(video => video.id === videoId);
-}
-
-function createHomeVideoCard(video) {
-    return `
-        <div class="video-card home-video" onclick="location.href='player.html?video=${video.id}'">
-            <div class="thumbnail">
-                <img src="${video.thumbnail}" alt="${video.title}">
-                <div class="play-icon">▶</div>
-            </div>
-            <div class="video-info">
-                <h3>${video.title}</h3>
-                <p>${video.channel}</p>
-                <div class="video-date">${video.date}</div>
-            </div>
-        </div>
-    `;
-}
