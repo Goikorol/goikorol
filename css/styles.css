@@ -1529,6 +1529,7 @@ footer {
     .announcement-card:hover,
     .video-card:hover,
     .home-video:hover,
+    .home-announcements a,
     .social-link:hover,
     .tab-button:hover {
         transform: none !important;
