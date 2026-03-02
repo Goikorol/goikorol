@@ -1455,6 +1455,7 @@ footer {
 @media (max-width: 768px) {
     .home-announcements {
         padding: 20px;
+        text-align: center;
     }
 
     .announcement-card {
