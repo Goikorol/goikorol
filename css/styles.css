@@ -1247,7 +1247,8 @@ footer {
 
 .home-intro h1 {
     font-size: 2.6em;
-    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     color: var(--twitch-purple);
 }
 
