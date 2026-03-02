@@ -443,3 +443,24 @@ function renderLatestVideosAnnouncements() {
         `;
     });
 }
+
+
+/* ===============================
+   ANUNCIO → IR A COMUNIDAD
+=============================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+    const communityCard = document.querySelector(".announcement-community");
+
+    if (!communityCard) return;
+
+    communityCard.addEventListener("click", () => {
+        localStorage.setItem("activeTab", "comunidad");
+        activateTab("comunidad");
+
+        // Scroll suave al inicio del contenido
+        document
+            .querySelector(".tabs-container")
+            ?.scrollIntoView({ behavior: "smooth" });
+    });
+});

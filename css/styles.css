@@ -1501,3 +1501,12 @@ footer {
 .home-announcements a:hover::after {
     transform: scaleX(1);
 }
+
+/* Tarjeta comunidad clickeable */
+.announcement-community {
+    cursor: pointer;
+}
+
+.announcement-community:hover {
+    transform: translateX(8px);
+}
