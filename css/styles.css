@@ -665,6 +665,14 @@ footer {
     border: none;
 }
 
+.player-wrapper {
+    transition: transform 0.25s ease;
+}
+
+.player-wrapper:hover {
+    transform: scale(1.01);
+}
+
 /* INFO */
 .player-info {
     margin-top: 1rem;
