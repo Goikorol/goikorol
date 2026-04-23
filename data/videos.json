@@ -14,7 +14,21 @@
         "category": "Goikorock",
         "playlist": "Gustavo Cerati"
     },
-    
+    {
+        "id": "v76plrq",
+        "platform": "rumble",
+        "title": "CANCION ANIMAL | SODA STEREO",
+        "description": "Hoy reaccionamos a CANCION ANIMAL de SODA STEREO",
+        "date": "2026-03-22",
+        "tags": [
+            "musica",
+            "reaccion",
+            "soda stereo"
+        ],
+        "thumbnail": "imagenes/default-thumbnail.jpg",
+        "category": "Goikorock",
+        "playlist": "Soda Stereo"
+    },
 
     {
         "id": "NcZ9O-JI5nA",
