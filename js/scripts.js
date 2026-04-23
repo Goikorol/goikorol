@@ -12,7 +12,7 @@ let ALL_VIDEOS = [];
 =============================== */
 
 // 👉 PEGÁ ACÁ el ID del video destacado (YouTube ID)
-const FEATURED_VIDEO_ID = "knraJYSH5tM";
+const FEATURED_VIDEO_ID = "Gp8Brla6ltk";
 // ===============================
 // TABS
 // ===============================
