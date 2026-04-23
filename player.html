@@ -132,25 +132,18 @@
 
     <script>
         // Cargar video desde URL param
-        const urlParams = new URLSearchParams(window.location.search);
-        const videoId = urlParams.get('video');
-        if (videoId) {
-            document.getElementById('youtube-player').src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
-            
-            // Opcional: Cargar detalles desde JSON (buscar por ID)
-            async function loadDetails() {
-                const response = await fetch('data/videos.json');
-                const videos = await response.json();
-                const video = videos.find(v => v.id === videoId);
-                if (video) {
-                    document.getElementById('player-title').textContent = video.title;
-                    document.querySelector('.player-description').textContent = video.description;
-                    document.querySelector('.player-date').textContent = `Publicado: ${video.date}`;
+        function getEmbedUrl(video) {
+    switch (video.platform) {
+        case "youtube":
+            return `https://www.youtube.com/embed/${video.id}?autoplay=1&rel=0`;
 
-                }
-            }
-            loadDetails();
-        }
+        case "rumble":
+            return `https://rumble.com/embed/${video.id}/?autoplay=2`;
+
+        default:
+            return null;
+    }
+}
     </script>
 </body>
 </html>
