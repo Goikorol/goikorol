@@ -53,7 +53,7 @@ if (videoId) {
         if (!video) return;
 
         const embedUrl = getEmbedUrl(video);
-        const player = document.getElementById('youtube-player');
+        const player = document.getElementById("video-player");
 
         if (embedUrl) {
             player.src = embedUrl;
