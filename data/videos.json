@@ -1,5 +1,20 @@
 [
     {
+        "id": "https://rumble.com/embed/v76plvu/?pub=4",
+        "platform": "rumble",
+        "title": "FUERZA NATURAL | GUSTAVO CERATI",
+        "description": "Hoy reaccionamos al álbum FUERZA NATURAL de GUSTAVO CERATI",
+        "date": "2026-04-22",
+        "tags": [
+            "musica",
+            "reaccion",
+            "cerati"
+        ],
+        "thumbnail": "imagenes/default-thumbnail.jpg",
+        "category": "Goikorock",
+        "playlist": "Gustavo Cerati"
+    },
+    {
         "id": "NcZ9O-JI5nA",
         "title": "🎸 SODA STEREO vuelve!!! con CERATI como HOLOGRAMA?? 🤷‍♂️",
         "description": "Debatimos sobre el regreso de Soda Stereo con su gira Ecos y el uso de tecnología holográfica para recrear a Gustavo Cerati\n",
