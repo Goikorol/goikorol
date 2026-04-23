@@ -1,6 +1,6 @@
 [
     {
-        "id": "https://rumble.com/embed/v76plvu/?pub=4",
+        "id": "v76plvu",
         "platform": "rumble",
         "title": "FUERZA NATURAL | GUSTAVO CERATI",
         "description": "Hoy reaccionamos al álbum FUERZA NATURAL de GUSTAVO CERATI",
@@ -14,22 +14,8 @@
         "category": "Goikorock",
         "playlist": "Gustavo Cerati"
     },
-    {
-        "id": "v76plrq/",
-        "platform": "youtube",
-        "title": "CANCION ANIMAL | SODA STEREO",
-        "description": "Hoy reaccionamos a CANCION ANIMAL de SODA SETEREO",
-        "date": "2026-04-22",
-        "tags": [
-            "musica",
-            "reaccion",
-            "soda stereo"
-        ],
-        "thumbnail": "https://img.youtube.com/vi/v76plrq//hqdefault.jpg",
-        "category": "Goikorock",
-        "playlist": "Soda Stereo"
-    },
     
+
     {
         "id": "NcZ9O-JI5nA",
         "title": "🎸 SODA STEREO vuelve!!! con CERATI como HOLOGRAMA?? 🤷‍♂️",
