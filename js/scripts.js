@@ -244,6 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
             activateTab(savedTab);
         } else {
             activateTab('home'); // 👈 default SIEMPRE
+            localStorage.setItem('activeTab', 'home');
         }
 
     // ===== CARGA INICIAL =====
