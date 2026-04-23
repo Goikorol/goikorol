@@ -10,6 +10,7 @@
             "soda stereo"
         ],
         "thumbnail": "https://img.youtube.com/vi/NcZ9O-JI5nA/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Especiales"
     },
@@ -24,6 +25,7 @@
             "goiko"
         ],
         "thumbnail": "https://img.youtube.com/vi/NtGWyOWvNhY/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Esto es FA!"
     },
@@ -39,6 +41,7 @@
             "entrevista"
         ],
         "thumbnail": "https://img.youtube.com/vi/J756Lg537Bo/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Especiales"
     },
@@ -53,6 +56,7 @@
             "goiko"
         ],
         "thumbnail": "https://img.youtube.com/vi/kpCfzZz9rtQ/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Esto es FA!"
     },
@@ -67,6 +71,7 @@
             "indio"
         ],
         "thumbnail": "https://img.youtube.com/vi/DhYlod1TBQk/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Especiales"
     },
@@ -81,10 +86,11 @@
             "spinetta"
         ],
         "thumbnail": "https://img.youtube.com/vi/8ryeNptHjLM/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Luis Alberto Spinetta"
     },
-    
+
      {
         "id": "SuJSzLl6gZc",
         "title": "⚔️ REACCION el CABALLERO de los SIETE REINOS T1E5 | En el Nombre de la Madre🛡",
@@ -98,6 +104,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/SuJSzLl6gZc/hqdefault.jpg",
+        "platform": "youtube",
         "category": "themoviesniper",
         "playlist": "El Caballero de los Siete Reinos"
     },
@@ -112,6 +119,7 @@
             "reaccion"
         ],
         "thumbnail": "https://img.youtube.com/vi/oJ-dQ_3FctI/hqdefault.jpg",
+        "platform": "youtube",
         "category": "themoviesniper",
         "playlist": "El Caballero de los Siete Reinos"
     },
@@ -129,6 +137,7 @@
             "español"
         ],
         "thumbnail": "https://img.youtube.com/vi/KvcNAqXADPo/hqdefault.jpg",
+        "platform": "youtube",
         "category": "themoviesniper",
         "playlist": "Harry Potter"
     },
@@ -146,6 +155,7 @@
             "español"
         ],
         "thumbnail": "https://img.youtube.com/vi/T-OG26cI7OI/hqdefault.jpg",
+        "platform": "youtube",
         "category": "themoviesniper",
         "playlist": "Harry Potter"
     },
@@ -160,6 +170,7 @@
             "snazzy"
         ],
         "thumbnail": "https://img.youtube.com/vi/U5xXm-kgQx4/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Snazzy Powa"
     },
@@ -175,6 +186,7 @@
             "documentales"
         ],
         "thumbnail": "https://img.youtube.com/vi/nwMfLH-jY24/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Documentales"
     },
@@ -188,6 +200,7 @@
             "les luthiers"
         ],
         "thumbnail": "https://img.youtube.com/vi/Gp8Brla6ltk/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Les Luthiers"
     },
@@ -206,6 +219,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/vdpwO_EhGLQ/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Hermanos y Detectives"
     },
@@ -223,6 +237,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/f3ZWPDKRuEM/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Hermanos y Detectives"
     },
@@ -240,6 +255,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/jXV_jueu-Vs/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Hermanos y Detectives"
     },
@@ -257,6 +273,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/8ps6bNmJOus/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Hermanos y Detectives"
     },
@@ -274,6 +291,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/TGdm-i2_VwU/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Hermanos y Detectives"
     },
@@ -291,6 +309,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/iglox-LxxtI/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Hermanos y Detectives"
     },
@@ -308,6 +327,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/wx3S1Nnc71o/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Hermanos y Detectives"
     },
@@ -325,6 +345,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/FI-PU61MH_0/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Hermanos y Detectives"
     },
@@ -342,6 +363,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/KuHeaYx7h08/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Hermanos y Detectives"
     },
@@ -359,6 +381,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/ikSzHn9TLWk/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Hermanos y Detectives"
     },
@@ -378,6 +401,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/f-miFbRdHfU/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Los Simuladores 2"
     },
@@ -396,6 +420,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/JRqU0V-om64/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Los Simuladores 2"
     },
@@ -414,6 +439,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/WvECMjLIwUM/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Los Simuladores 2"
     },
@@ -432,6 +458,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/H8A6QOyhPtM/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Los Simuladores 2"
     },
@@ -448,6 +475,7 @@
             "español"
         ],
         "thumbnail": "https://img.youtube.com/vi/U99ex63JTSE/hqdefault.jpg",
+        "platform": "youtube",
         "category": "themoviesniper",
         "playlist": "El Caballero de los Siete Reinos"
     },
@@ -464,6 +492,7 @@
             "español"
         ],
         "thumbnail": "https://img.youtube.com/vi/J3oZjMo5sXk/hqdefault.jpg",
+        "platform": "youtube",
         "category": "themoviesniper",
         "playlist": "El Caballero de los Siete Reinos"
     },
@@ -480,6 +509,7 @@
             "español"
         ],
         "thumbnail": "https://img.youtube.com/vi/knraJYSH5tM/hqdefault.jpg",
+        "platform": "youtube",
         "category": "themoviesniper",
         "playlist": "Harry Potter"
     },
@@ -495,6 +525,7 @@
             "reaccion"
         ],
         "thumbnail": "https://img.youtube.com/vi/JzOzKqzvVkk/hqdefault.jpg",
+        "platform": "youtube",
         "category": "themoviesniper",
         "playlist": "El Caballero de los Siete Reinos"
     },
@@ -512,6 +543,7 @@
             "español"
         ],
         "thumbnail": "https://img.youtube.com/vi/z5YhF6AfwlA/hqdefault.jpg",
+        "platform": "youtube",
         "category": "themoviesniper",
         "playlist": "Harry Potter"
     },
@@ -528,6 +560,7 @@
             "español"
         ],
         "thumbnail": "https://img.youtube.com/vi/3HATgylVjj8/hqdefault.jpg",
+        "platform": "youtube",
         "category": "themoviesniper",
         "playlist": "El Caballero de los Siete Reinos"
     },
@@ -546,6 +579,7 @@
             "ucm"
         ],
         "thumbnail": "https://img.youtube.com/vi/JDG08IfVSxU/hqdefault.jpg",
+        "platform": "youtube",
         "category": "themoviesniper",
         "playlist": "Acción"
     },
@@ -564,6 +598,7 @@
             "español"
         ],
         "thumbnail": "https://img.youtube.com/vi/SC-cwUJAURA/hqdefault.jpg",
+        "platform": "youtube",
         "category": "themoviesniper",
         "playlist": "Acción"
     },
@@ -581,6 +616,7 @@
             "español"
         ],
         "thumbnail": "https://img.youtube.com/vi/4hXnnXELN24/hqdefault.jpg",
+        "platform": "youtube",
         "category": "themoviesniper",
         "playlist": "Harry Potter"
     },
@@ -598,6 +634,7 @@
             "español"
         ],
         "thumbnail": "https://img.youtube.com/vi/osX-pI4yk8g/hqdefault.jpg",
+        "platform": "youtube",
         "category": "themoviesniper",
         "playlist": "Acción"
     },
@@ -615,6 +652,7 @@
             "español"
         ],
         "thumbnail": "https://img.youtube.com/vi/_98INqdpJsA/hqdefault.jpg",
+        "platform": "youtube",
         "category": "themoviesniper",
         "playlist": "Harry Potter"
     },
@@ -632,6 +670,7 @@
             "español"
         ],
         "thumbnail": "https://img.youtube.com/vi/WG9bQ8sV8yI/hqdefault.jpg",
+        "platform": "youtube",
         "category": "themoviesniper",
         "playlist": "Harry Potter"
     },
@@ -650,6 +689,7 @@
             "español"
         ],
         "thumbnail": "https://img.youtube.com/vi/3gPCh8ysi-0/hqdefault.jpg",
+        "platform": "youtube",
         "category": "themoviesniper",
         "playlist": "Ciencia ficción"
     },
@@ -665,6 +705,7 @@
             "spinetta"
         ],
         "thumbnail": "https://img.youtube.com/vi/weC3mxr0s8s/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Luis Alberto Spinetta"
     },
@@ -683,6 +724,7 @@
         "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/YXl8ssu8o2U/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Los Simuladores 2"
   },
@@ -701,6 +743,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/6XnrXDA-KMI/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Los Simuladores 2"
     },
@@ -719,6 +762,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/O25zBqngQc0/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Los Simuladores 2"
     },
@@ -737,6 +781,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/AObmYMaEt5w/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Los Simuladores 2"
     },
@@ -755,6 +800,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/6maMBkx2jjs/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Los Simuladores 2"
     },
@@ -773,6 +819,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/9jNvtN9wt-k/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Los Simuladores 2"
     },
@@ -792,6 +839,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/snezYBFQfAU/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Los Simuladores 2"
     },
@@ -810,6 +858,7 @@
             "español"
         ],
         "thumbnail": "https://img.youtube.com/vi/3rta2lU1E_o/hqdefault.jpg",
+        "platform": "youtube",
         "category": "themoviesniper",
         "playlist": "Acción"
     },
@@ -827,6 +876,7 @@
             "español"
         ],
         "thumbnail": "https://img.youtube.com/vi/DiLxQk7UkjY/hqdefault.jpg",
+        "platform": "youtube",
         "category": "themoviesniper",
         "playlist": "Terror"
     },
@@ -844,6 +894,7 @@
             "español"
         ],
         "thumbnail": "https://img.youtube.com/vi/k6OIsLc7XFo/hqdefault.jpg",
+        "platform": "youtube",
         "category": "themoviesniper",
         "playlist": "Acción"
     },
@@ -861,6 +912,7 @@
             "español"
         ],
         "thumbnail": "https://img.youtube.com/vi/iEG8OpqtCsE/hqdefault.jpg",
+        "platform": "youtube",
         "category": "themoviesniper",
         "playlist": "Terror"
     },
@@ -878,6 +930,7 @@
             "español"
         ],
         "thumbnail": "https://img.youtube.com/vi/wULonOQ04qs/hqdefault.jpg",
+        "platform": "youtube",
         "category": "themoviesniper",
         "playlist": "Acción"
     },
@@ -895,6 +948,7 @@
             "español"
         ],
         "thumbnail": "https://img.youtube.com/vi/kGryQ0cS-nA/hqdefault.jpg",
+        "platform": "youtube",
         "category": "themoviesniper",
         "playlist": "Acción"
     },
@@ -913,6 +967,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/kvREKS7w8Lc/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Los Simuladores 1"
     },
@@ -932,6 +987,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/5eutiSFcFwU/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Los Simuladores 1"
     },
@@ -950,6 +1006,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/G0ZOM6L4m8o/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Los Simuladores 1"
     },
@@ -968,6 +1025,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/_orbRGa1MG4/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Los Simuladores 1"
     },
@@ -986,6 +1044,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/e0guk6wfvno/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Los Simuladores 1"
     },
@@ -1005,6 +1064,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/2NPqPl54cY0/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Los Simuladores 1"
     },
@@ -1023,6 +1083,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/lfzTtAaXYOo/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Los Simuladores 1"
     },
@@ -1041,6 +1102,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/6KS5lWRe7aQ/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Los Simuladores 1"
     },
@@ -1059,6 +1121,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/H37jk-wxk7k/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Los Simuladores 1"
     },
@@ -1077,6 +1140,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/5H5mdmya2UM/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Los Simuladores 1"
     },
@@ -1095,6 +1159,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/v47Bam_4vXw/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Los Simuladores 1"
     },
@@ -1113,6 +1178,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/Vjxc24I7TQw/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Los Simuladores 1"
     },
@@ -1130,6 +1196,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/oJ-BZQsGAKQ/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Okupas"
     },
@@ -1147,6 +1214,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/ZmvkMPEYs74/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Okupas"
     },
@@ -1164,6 +1232,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/mE6x4wLwZYc/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Okupas"
     },
@@ -1181,6 +1250,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/jM4aqhHyYuY/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Okupas"
     },
@@ -1198,6 +1268,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/JKuoXEG8Ulk/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Okupas"
     },
@@ -1215,6 +1286,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/pTwvLhbvdMw/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Okupas"
     },
@@ -1232,6 +1304,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/OnZkI24ygEA/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Okupas"
     },
@@ -1249,6 +1322,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/lR-nYITesgA/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Okupas"
     },
@@ -1266,6 +1340,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/uukW8Zbashc/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Okupas"
     },
@@ -1283,6 +1358,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/4V998ANVjTw/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Okupas"
     },
@@ -1300,6 +1376,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/abmiXgqlC8E/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "Okupas"
     },
@@ -1318,6 +1395,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/U_Vp_ADSml8/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "El Eternauta"
     },
@@ -1335,6 +1413,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/IoZq7I1axd0/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "El Eternauta"
     },
@@ -1352,6 +1431,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/6gyB8vECxUo/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "El Eternauta"
     },
@@ -1369,6 +1449,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/zwc7wLighJg/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "El Eternauta"
     },
@@ -1386,6 +1467,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/6Pjx_92pJJQ/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "El Eternauta"
     },
@@ -1403,6 +1485,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/sqb7izkQKkk/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "El Eternauta"
     },
@@ -1420,6 +1503,7 @@
             "goikorol"
         ],
         "thumbnail": "https://img.youtube.com/vi/fdvryBO-wLU/hqdefault.jpg",
+        "platform": "youtube",
         "category": "goikorol",
         "playlist": "El Eternauta"
     },
@@ -1461,6 +1545,7 @@
             "serú girán"
         ],
         "thumbnail": "https://img.youtube.com/vi/h7qBIF6PhLA/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Serú Girán"
     },
@@ -1475,6 +1560,7 @@
             "catupecu machu"
         ],
         "thumbnail": "https://img.youtube.com/vi/bE6AgPePB60/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Catupecu Machu"
     },
@@ -1489,6 +1575,7 @@
             "spinetta"
         ],
         "thumbnail": "https://img.youtube.com/vi/n3boxHqHbR8/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Luis Alberto Spinetta"
     },
@@ -1503,6 +1590,7 @@
             "el reloj"
         ],
         "thumbnail": "https://img.youtube.com/vi/qUsH-LMVmNY/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "El Reloj"
     },
@@ -1517,6 +1605,7 @@
             "andrea alvarez"
         ],
         "thumbnail": "https://img.youtube.com/vi/195-c8KiZQM/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Andrea Alvarez"
     },
@@ -1531,6 +1620,7 @@
             "spinetta jade"
         ],
         "thumbnail": "https://img.youtube.com/vi/NY1FNKOqQ2w/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Spinetta Jade"
     },
@@ -1545,6 +1635,7 @@
             "divididos"
         ],
         "thumbnail": "https://img.youtube.com/vi/pIlMCdn-VnQ/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Divididos"
     },
@@ -1559,6 +1650,7 @@
             "pappos blues"
         ],
         "thumbnail": "https://img.youtube.com/vi/4oxQaxa-FsE/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Pappo's Blues"
     },
@@ -1573,6 +1665,7 @@
             "serú girán"
         ],
         "thumbnail": "https://img.youtube.com/vi/Rqejc-Kv_b8/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Serú Girán"
     },
@@ -1587,6 +1680,7 @@
             "serú girán"
         ],
         "thumbnail": "https://img.youtube.com/vi/qeSc-0odlwA/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Serú Girán"
     },
@@ -1601,6 +1695,7 @@
             "maria gabriela epumer"
         ],
         "thumbnail": "https://img.youtube.com/vi/0UL-EBcOpyw/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "María Gabriela Epumer"
     },
@@ -1614,6 +1709,7 @@
             "reaccion"
         ],
         "thumbnail": "https://img.youtube.com/vi/Leai1rTG3aI/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Indio Solari y Los Fundamentalistas del Aire Acondicionado"
     },
@@ -1628,6 +1724,7 @@
             "serú girán"
         ],
         "thumbnail": "https://img.youtube.com/vi/w3Z9Y0ZBMP8/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Serú Girán"
     },
@@ -1642,6 +1739,7 @@
             "serú girán"
         ],
         "thumbnail": "https://img.youtube.com/vi/vtIx_v-kUUU/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Serú Girán"
     },
@@ -1656,6 +1754,7 @@
             "divididos"
         ],
         "thumbnail": "https://img.youtube.com/vi/d2WJwen57Wo/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Divididos"
     },
@@ -1670,6 +1769,7 @@
             "indio"
         ],
         "thumbnail": "https://img.youtube.com/vi/sMoPBj_E5Y4/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Indio Solari y Los Fundamentalistas del Aire Acondicionado"
     },
@@ -1684,6 +1784,7 @@
             "serú girán"
         ],
         "thumbnail": "https://img.youtube.com/vi/8kRPfufHD1M/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Serú Girán"
     },
@@ -1698,6 +1799,7 @@
             "spinetta"
         ],
         "thumbnail": "https://img.youtube.com/vi/YLZxP2q6kHM/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Spinetta Jade"
     },
@@ -1712,6 +1814,7 @@
             "indio"
         ],
         "thumbnail": "https://img.youtube.com/vi/jSd4LTbcflw/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Indio Solari y Los Fundamentalistas del Aire Acondicionado"
     },
@@ -1726,6 +1829,7 @@
             "pappos"
         ],
         "thumbnail": "https://img.youtube.com/vi/VGEcf3PXfGc/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Pappo's Blues"
     },
@@ -1740,6 +1844,7 @@
             "indio"
         ],
         "thumbnail": "https://img.youtube.com/vi/oWCgvEa0OaI/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Indio Solari y Los Fundamentalistas del Aire Acondicionado"
     },
@@ -1754,6 +1859,7 @@
             "indio"
         ],
         "thumbnail": "https://img.youtube.com/vi/qQWJt1LEbRA/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Indio Solari y Los Fundamentalistas del Aire Acondicionado"
     },
@@ -1768,6 +1874,7 @@
             "spinetta"
         ],
         "thumbnail": "https://img.youtube.com/vi/pKeotmBoJs0/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Luis Alberto Spinetta"
     },
@@ -1782,6 +1889,7 @@
             "indio"
         ],
         "thumbnail": "https://img.youtube.com/vi/q6OwDOqnx-E/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Indio Solari y Los Fundamentalistas del Aire Acondicionado"
     },
@@ -1796,6 +1904,7 @@
             "cerati"
         ],
         "thumbnail": "https://img.youtube.com/vi/U2_Pt_nwDhI/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Gustavo Cerati"
     },
@@ -1810,6 +1919,7 @@
             "cerati"
         ],
         "thumbnail": "https://img.youtube.com/vi/vRSG8lAMisg/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Gustavo Cerati"
     },
@@ -1824,6 +1934,7 @@
             "cerati"
         ],
         "thumbnail": "https://img.youtube.com/vi/WlLqfl03-IM/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Gustavo Cerati"
     },
@@ -1838,6 +1949,7 @@
             "cerati"
         ],
         "thumbnail": "https://img.youtube.com/vi/QyRGDPmY0BE/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Gustavo Cerati"
     },
@@ -1852,6 +1964,7 @@
             "divididos"
         ],
         "thumbnail": "https://img.youtube.com/vi/C5LLTXoANhw/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Divididos"
     },
@@ -1866,6 +1979,7 @@
             "divididos"
         ],
         "thumbnail": "https://img.youtube.com/vi/Oa5_0vatuNA/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Divididos"
     },
@@ -1880,6 +1994,7 @@
             "cerati"
         ],
         "thumbnail": "https://img.youtube.com/vi/Bi4505K_J3w/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Gustavo Cerati"
     },
@@ -1894,6 +2009,7 @@
             "cerati"
         ],
         "thumbnail": "https://img.youtube.com/vi/42Uqr_fahhc/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Gustavo Cerati"
     },
@@ -1908,6 +2024,7 @@
             "cerati"
         ],
         "thumbnail": "https://img.youtube.com/vi/U8uKGoyX7z4/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Gustavo Cerati"
     },
@@ -1922,6 +2039,7 @@
             "divididos"
         ],
         "thumbnail": "https://img.youtube.com/vi/gQuOP7KuHG4/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Divididos"
     },
@@ -1936,6 +2054,7 @@
             "cerati"
         ],
         "thumbnail": "https://img.youtube.com/vi/07HYi9TuyJQ/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Gustavo Cerati"
     },
@@ -1950,6 +2069,7 @@
             "spinetta"
         ],
         "thumbnail": "https://img.youtube.com/vi/vHbdzRQwLec/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Spinetta Jade"
     },
@@ -1964,6 +2084,7 @@
             "cerati"
         ],
         "thumbnail": "https://img.youtube.com/vi/iAP6XsyR5ps/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Gustavo Cerati"
     },
@@ -1978,6 +2099,7 @@
             "charly garcia"
         ],
         "thumbnail": "https://img.youtube.com/vi/I_LGS8Yvb18/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Charly García"
     },
@@ -1992,6 +2114,7 @@
             "charly garcia"
         ],
         "thumbnail": "https://img.youtube.com/vi/fA-sFEK0QI8/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Charly García"
     },
@@ -2006,6 +2129,7 @@
             "charly garcia"
         ],
         "thumbnail": "https://img.youtube.com/vi/9UfZtw2Hikg/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Charly García"
     },
@@ -2020,6 +2144,7 @@
             "redondos"
         ],
         "thumbnail": "https://img.youtube.com/vi/hW9hl38NUr0/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Patricio Rey y sus Redonditos de Ricota"
     },
@@ -2034,6 +2159,7 @@
             "redondos"
         ],
         "thumbnail": "https://img.youtube.com/vi/ryguVW5SnN8/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Patricio Rey y sus Redonditos de Ricota"
     },
@@ -2048,6 +2174,7 @@
             "redondos"
         ],
         "thumbnail": "https://img.youtube.com/vi/GQXeskRlxLw/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Patricio Rey y sus Redonditos de Ricota"
     },
@@ -2062,6 +2189,7 @@
             "redondos"
         ],
         "thumbnail": "https://img.youtube.com/vi/Tdk2r6rNBG8/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Patricio Rey y sus Redonditos de Ricota"
     },
@@ -2076,6 +2204,7 @@
             "redondos"
         ],
         "thumbnail": "https://img.youtube.com/vi/ul9R5xu74fY/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Patricio Rey y sus Redonditos de Ricota"
     },
@@ -2090,6 +2219,7 @@
             "redondos"
         ],
         "thumbnail": "https://img.youtube.com/vi/bMvl6pKNR9o/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Patricio Rey y sus Redonditos de Ricota"
     },
@@ -2104,6 +2234,7 @@
             "redondos"
         ],
         "thumbnail": "https://img.youtube.com/vi/tnZL37ntxQk/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Patricio Rey y sus Redonditos de Ricota"
     },
@@ -2118,6 +2249,7 @@
             "redondos"
         ],
         "thumbnail": "https://img.youtube.com/vi/h2tsTxwyeBA/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Patricio Rey y sus Redonditos de Ricota"
     },
@@ -2132,6 +2264,7 @@
             "redondos"
         ],
         "thumbnail": "https://img.youtube.com/vi/RfDIXDPaDCU/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Patricio Rey y sus Redonditos de Ricota"
     },
@@ -2146,6 +2279,7 @@
             "redondos"
         ],
         "thumbnail": "https://img.youtube.com/vi/HyBmSl3E488/hqdefault.jpg",
+        "platform": "youtube",
         "category": "Goikorock",
         "playlist": "Patricio Rey y sus Redonditos de Ricota"
     },
@@ -2188,6 +2322,7 @@
             "infected"
         ],
         "thumbnail": "https://img.youtube.com/vi/UcJJ152ra5k/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "The Infected"
     },
@@ -2202,6 +2337,7 @@
             "infected"
         ],
         "thumbnail": "https://img.youtube.com/vi/Q3NJf5qj3hs/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "The Infected"
     },
@@ -2216,6 +2352,7 @@
             "infected"
         ],
         "thumbnail": "https://img.youtube.com/vi/___GNFrL6cU/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "The Infected"
     },
@@ -2230,6 +2367,7 @@
             "infected"
         ],
         "thumbnail": "https://img.youtube.com/vi/ftEGXqOtMlQ/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "The Infected"
     },
@@ -2244,6 +2382,7 @@
             "hellblade"
         ],
         "thumbnail": "https://img.youtube.com/vi/cHZEUzK-qOE/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Hellblade: Senua's Sacrifice"
     },
@@ -2258,6 +2397,7 @@
             "hallblade"
         ],
         "thumbnail": "https://img.youtube.com/vi/ULK3iqUUIGs/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Hellblade: Senua's Sacrifice"
     },
@@ -2272,6 +2412,7 @@
             "hellblade"
         ],
         "thumbnail": "https://img.youtube.com/vi/gX3dbEMr7Mk/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Hellblade: Senua's Sacrifice"
     },
@@ -2286,6 +2427,7 @@
             "oblivion"
         ],
         "thumbnail": "https://img.youtube.com/vi/4sxVUlYrWdk/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Oblivion Remastered"
     },
@@ -2300,6 +2442,7 @@
             "oblivion"
         ],
         "thumbnail": "https://img.youtube.com/vi/oSPqxyejHI0/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Oblivion Remastered"
     },
@@ -2314,6 +2457,7 @@
             "oblivion"
         ],
         "thumbnail": "https://img.youtube.com/vi/YW3-IWFHlrM/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Oblivion Remastered"
     },
@@ -2328,6 +2472,7 @@
             "oblivion"
         ],
         "thumbnail": "https://img.youtube.com/vi/3s2CS3EYgjk/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Oblivion Remastered"
     },
@@ -2341,6 +2486,7 @@
             "zomboid"
         ],
         "thumbnail": "https://img.youtube.com/vi/TJKa2WJUE4M/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Project Zomboid"
     },
@@ -2355,6 +2501,7 @@
             "zomboid"
         ],
         "thumbnail": "https://img.youtube.com/vi/j9yPXcy3e6Y/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Project Zomboid"
     },
@@ -2369,6 +2516,7 @@
             "zomboid"
         ],
         "thumbnail": "https://img.youtube.com/vi/vGq3o02TKuE/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Project Zomboid"
     },
@@ -2382,6 +2530,7 @@
             "zomboid"
         ],
         "thumbnail": "https://img.youtube.com/vi/rDBJrauVprE/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Project Zomboid"
     },
@@ -2395,6 +2544,7 @@
             "zomboid"
         ],
         "thumbnail": "https://img.youtube.com/vi/aZl2ofwem2s/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Project Zomboid"
     },
@@ -2408,6 +2558,7 @@
             "zomboid"
         ],
         "thumbnail": "https://img.youtube.com/vi/yrDUVqQmjd0/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Project Zomboid"
     },
@@ -2421,6 +2572,7 @@
             "zomboid"
         ],
         "thumbnail": "https://img.youtube.com/vi/eF1k6hacZJ4/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Project Zomboid"
     },
@@ -2436,6 +2588,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/bb_6_lfV4SM/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2450,6 +2603,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/trxN8siVN8A/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2464,6 +2618,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/1RNQvZM5f58/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2478,6 +2633,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/f-VjJk-nez0/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2492,6 +2648,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/dNgKTQkGuK8/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2506,6 +2663,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/-ZhR6t1_t5M/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2520,6 +2678,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/zb7TlIEqyl4/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2534,6 +2693,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/Je5G5nylYfU/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2548,6 +2708,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/MWmNWxAZiS8/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2562,6 +2723,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/WhHY95QypUk/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2576,6 +2738,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/XAp2VBxAwG4/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2590,6 +2753,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/4ytD5VTzLKI/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2603,6 +2767,7 @@
             "zomboid"
         ],
         "thumbnail": "https://img.youtube.com/vi/EquWs7yxTEc/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2617,6 +2782,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/PE1RNDANys8/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2631,6 +2797,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/x2MxFjAXKR4/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2645,6 +2812,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/SDK49EgMUaA/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2659,6 +2827,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/GGVLN9Wy0I0/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2673,6 +2842,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/yM9g-UFJxmM/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2687,6 +2857,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/oIDnr0sJBDc/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2701,6 +2872,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/JCPQ6IJ0xlk/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2715,6 +2887,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/xQ0xEU7r6XA/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2729,6 +2902,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/DK_99nKyqlM/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2743,6 +2917,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/jCy7wJFjDrU/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2757,6 +2932,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/mIRfazCa9uc/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2771,6 +2947,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/j1IMh1L4z-I/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2785,6 +2962,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/WhG9-7pDrWU/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2799,6 +2977,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/24HED1gj994/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2813,6 +2992,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/yzrxihcedgI/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2827,6 +3007,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/61Ke7CyCNA8/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2841,6 +3022,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/WqtLD5zVdKA/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2855,6 +3037,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/ZKcpJlp9DlM/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2869,6 +3052,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/Oe2KoJ_OXKg/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2883,6 +3067,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/n6pV33A5njM/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2897,6 +3082,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/ydtBxldJ_UQ/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2911,6 +3097,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/qlVpG4Z5Wfc/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2925,6 +3112,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/xG2GR8Yqj1w/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2939,6 +3127,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/-hbeIX5G4dw/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2953,6 +3142,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/c1ZvglJNxLs/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2967,6 +3157,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/e7LXLtJQXnI/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2981,6 +3172,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/oPGtTe-D_M0/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -2995,6 +3187,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/q2YDb9OcfnI/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -3009,6 +3202,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/ITxuDCEldkE/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -3023,6 +3217,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/_0RAeJB0Q18/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -3037,6 +3232,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/QdQVjWa-q6E/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -3051,6 +3247,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/4hNaxYg4N-4/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -3065,6 +3262,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/FBqcLTc85fg/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -3079,6 +3277,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/M4Wrd_SupRk/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -3093,6 +3292,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/DqfwD_nqu3A/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -3107,6 +3307,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/rfcNwT-MQa0/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -3121,6 +3322,7 @@
             "kingdom"
         ],
         "thumbnail": "https://img.youtube.com/vi/x_JkssGBsD0/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "Kingdom Come Deliverance"
     },
@@ -3136,6 +3338,7 @@
             "infected"
         ],
         "thumbnail": "https://img.youtube.com/vi/7u4CQxNwI54/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "The Infected"
     },
@@ -3150,6 +3353,7 @@
             "infected"
         ],
         "thumbnail": "https://img.youtube.com/vi/2bmBzVcWC1Q/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "The Infected"
     },
@@ -3164,6 +3368,7 @@
             "infected"
         ],
         "thumbnail": "https://img.youtube.com/vi/Z1rOkLfARmw/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "The Infected"
     },
@@ -3178,6 +3383,7 @@
             "infected"
         ],
         "thumbnail": "https://img.youtube.com/vi/u3qre58AjZ8/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "The Infected"
     },
@@ -3191,6 +3397,7 @@
             "infected"
         ],
         "thumbnail": "https://img.youtube.com/vi/EAJacbKAnaU/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "The Infected"
     },
@@ -3204,6 +3411,7 @@
             "infected"
         ],
         "thumbnail": "https://img.youtube.com/vi/Mi-G8HMsSL4/hqdefault.jpg",
+        "platform": "youtube",
         "category": "gameplays",
         "playlist": "The Infected"
     }

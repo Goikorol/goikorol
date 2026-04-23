@@ -7,6 +7,18 @@
 // ===============================
 let ALL_VIDEOS = [];
 
+function getEmbedUrl(video) {
+    switch (video.platform) {
+        case "youtube":
+            return `https://www.youtube.com/embed/${video.id}?autoplay=1&rel=0`;
+
+        case "rumble":
+            return `https://rumble.com/embed/${video.id}/?autoplay=2`;
+
+        default:
+            return null;
+    }
+}
 /* ===============================
    CONFIG HOME
 =============================== */
