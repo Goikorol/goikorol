@@ -35,3 +35,26 @@ document.addEventListener("DOMContentLoaded", async () => {
     document.querySelector(".player-description").textContent = video.description;
     document.querySelector(".player-date").textContent = `Publicado: ${video.date}`;
 });
+
+const player = document.getElementById("video-player");
+
+function getEmbedUrl(video) {
+    if (video.platform === "youtube") {
+        return `https://www.youtube.com/embed/${video.id}`;
+    }
+
+    if (video.platform === "rumble") {
+        // Si ya viene como URL completa → usarla directo
+        if (video.id.startsWith("http")) {
+            return video.id;
+        }
+
+        // Si solo guardás el ID
+        return `https://rumble.com/embed/${video.id}`;
+    }
+
+    return "";
+}
+
+// cuando cargás el video:
+player.src = getEmbedUrl(video);
