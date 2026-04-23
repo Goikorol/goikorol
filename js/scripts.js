@@ -29,62 +29,32 @@ function activateTab(tabId) {
 // ===============================
 // CARGA DE VIDEOS
 // ===============================
-async function loadVideos() {
-    const grids = document.querySelectorAll('.video-grid');
-    if (!grids.length) return;
+const urlParams = new URLSearchParams(window.location.search);
+const videoId = urlParams.get('video');
 
-    try {
+if (videoId) {
+    async function loadDetails() {
         const response = await fetch('data/videos.json');
         const videos = await response.json();
+        const video = videos.find(v => v.id === videoId);
 
-        // 🔹 Guardamos todos los videos para el buscador universal
-        ALL_VIDEOS = videos;
+        if (!video) return;
 
-        // Render Home (destacado + último)
-        renderHomeVideos();
-        renderLatestVideosAnnouncements();
+        const embedUrl = getEmbedUrl(video);
+        const player = document.getElementById('youtube-player');
 
-        grids.forEach(grid => {
-            const category = grid.dataset.category;
-            grid.innerHTML = '';
+        if (embedUrl) {
+            player.src = embedUrl;
+        } else {
+            player.outerHTML = "<p>⚠ Plataforma no soportada</p>";
+        }
 
-            let filtered = videos
-            .filter(v => v.category === category)
-            .sort((a, b) => new Date(b.date) - new Date(a.date)); // 👈 más nuevos primero
-
-            if (!filtered.length) {
-                grid.innerHTML = '<p>No hay videos todavía.</p>';
-                return;
-            }
-
-            filtered.forEach(video => {
-                const card = document.createElement('div');
-                card.className = 'video-card';
-                card.dataset.playlist = video.playlist;
-
-                card.onclick = () => {
-                    window.location.href = `player.html?video=${video.id}`;
-                };
-
-                card.innerHTML = `
-                    <div class="thumbnail">
-                        <img src="${video.thumbnail}" alt="${video.title}">
-                        <div class="play-icon">▶</div>
-                    </div>
-                    <div class="video-info">
-                        <h3>${video.title}</h3>
-                        <p>${video.description}</p>
-                        <p class="video-date">📅 ${video.date}</p>
-                    </div>
-                `;
-
-                grid.appendChild(card);
-            });
-        });
-
-    } catch (err) {
-        console.error('Error cargando videos:', err);
+        document.getElementById('player-title').textContent = video.title;
+        document.querySelector('.player-description').textContent = video.description;
+        document.querySelector('.player-date').textContent = `Publicado: ${video.date}`;
     }
+
+    loadDetails();
 }
 
 // ===============================
