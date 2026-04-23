@@ -8,166 +8,202 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Header simplificado (o copia el completo si querés) -->
-    <header id="dynamic-header">
-        <!-- ... pega tu nav ... -->
-    </header>
 
-    <main>
-        <section id="add-video">
-            <h2>Agregar Nuevo Video</h2>
-            <form id="video-form">
-                <label for="id">ID de YouTube (ej: dQw4w9WgXcQ):</label>
-                <input type="text" id="id" required>
+<header id="dynamic-header"></header>
 
-                <label for="title">Título:</label>
-                <input type="text" id="title" required>
+<main>
+    <section id="add-video">
+        <h2>Agregar Nuevo Video</h2>
 
-                <label for="description">Descripción:</label>
-                <textarea id="description" required></textarea>
+        <form id="video-form">
 
-                <label for="date">Fecha (YYYY-MM-DD):</label>
-                <input type="date" id="date" required>
+            <!-- NUEVO: PLATAFORMA -->
+            <label for="platform">Plataforma:</label>
+            <select id="platform" required>
+                <option value="youtube">YouTube</option>
+                <option value="rumble">Rumble</option>
+            </select>
 
-                <label for="tags">Tags (separados por coma):</label>
-                <input type="text" id="tags" placeholder="música,reacción,spinetta">
+            <label for="id">ID o URL del video:</label>
+            <input type="text" id="id" required>
 
-                <!-- Thumbnail se genera auto con el ID -->
-                <p>Thumbnail: Se genera automáticamente desde YouTube.</p>
+            <label for="title">Título:</label>
+            <input type="text" id="title" required>
 
-                <label for="category">Sección:</label>
-                <select id="category" required>
-                    <option value="">Seleccionar sección</option>
-                    <option value="goikorol">Goikorol</option>
-                    <option value="themoviesniper">The Movie Sniper</option>
-                    <option value="Goikorock">Goikorock</option>
-                    <option value="gameplays">Gameplays</option>
-                </select>
+            <label for="description">Descripción:</label>
+            <textarea id="description" required></textarea>
 
-                <label for="playlist">Playlist:</label>
-                <input
-                    type="text"
-                    id="playlist"
-                    placeholder="Ej: Los Simuladores 2"
-                    required
-                >
+            <label for="date">Fecha (YYYY-MM-DD):</label>
+            <input type="date" id="date" required>
 
-                <button type="submit">Agregar Video</button>
-                <button type="button" id="clear-form">Limpiar</button>
-                <button type="button" id="download-json">Descargar JSON Actualizado</button>
-                <button type="button" id="copy-json">Copiar JSON al Portapapeles</button>
-            </form>
-            <p id="status"></p>
-        </section>
-        <h3>JSON generado</h3>
-            <textarea id="json-preview" rows="15" readonly
-                style="width:100%; font-family: monospace; resize: vertical;">
-            </textarea>
+            <label for="tags">Tags (separados por coma):</label>
+            <input type="text" id="tags" placeholder="musica,reaccion,goiko">
 
-    </main>
+            <p>Thumbnail: automático (YouTube) / placeholder (Rumble)</p>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-        <!-- ... pega tu footer ... -->
-    </footer>
+            <label for="category">Sección:</label>
+            <select id="category" required>
+                <option value="">Seleccionar sección</option>
+                <option value="goikorol">Goikorol</option>
+                <option value="themoviesniper">The Movie Sniper</option>
+                <option value="Goikorock">Goikorock</option>
+                <option value="gameplays">Gameplays</option>
+            </select>
 
-    <script>
-    let videos = JSON.parse(localStorage.getItem('videos')) || [];
+            <label for="playlist">Playlist:</label>
+            <input type="text" id="playlist" required>
 
-    const form = document.getElementById('video-form');
-    const jsonPreview = document.getElementById('json-preview');
-    const status = document.getElementById('status');
+            <button type="submit">Agregar Video</button>
+            <button type="button" id="clear-form">Limpiar</button>
+            <button type="button" id="download-json">Descargar JSON</button>
+            <button type="button" id="copy-json">Copiar JSON</button>
+        </form>
 
-    // Extraer ID desde URL o ID directo
-    function extractYouTubeID(input) {
+        <p id="status"></p>
+    </section>
+
+    <h3>JSON generado</h3>
+    <textarea id="json-preview" rows="15" readonly
+        style="width:100%; font-family: monospace;"></textarea>
+
+</main>
+
+<footer class="site-footer"></footer>
+
+<script>
+let videos = JSON.parse(localStorage.getItem('videos')) || [];
+
+const form = document.getElementById('video-form');
+const jsonPreview = document.getElementById('json-preview');
+const status = document.getElementById('status');
+
+// ===============================
+// EXTRAER ID SEGÚN PLATAFORMA
+// ===============================
+function extractVideoID(input, platform) {
+
+    if (platform === "youtube") {
         const regex = /(?:v=|youtu\.be\/|embed\/)([^?&]+)/;
         const match = input.match(regex);
         return match ? match[1] : input.trim();
     }
 
-    // Actualizar preview JSON
-    function updatePreview() {
-        jsonPreview.value = JSON.stringify(videos, null, 4);
-        localStorage.setItem('videos', JSON.stringify(videos));
+    if (platform === "rumble") {
+        const regex = /rumble\.com\/(v[^\-\/]+)/;
+        const match = input.match(regex);
+        return match ? match[1] : input.trim();
     }
 
-    // Fecha de hoy por defecto
-        document.getElementById('date').value =
-            new Date().toISOString().split('T')[0];
+    return input.trim();
+}
 
+// ===============================
+// THUMBNAIL
+// ===============================
+function getThumbnail(id, platform) {
 
-    // Inicializar preview
+    if (platform === "youtube") {
+        return `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
+    }
+
+    if (platform === "rumble") {
+        return "imagenes/default-thumbnail.jpg"; // poné una imagen placeholder
+    }
+
+    return "";
+}
+
+// ===============================
+// ACTUALIZAR JSON
+// ===============================
+function updatePreview() {
+    jsonPreview.value = JSON.stringify(videos, null, 4);
+    localStorage.setItem('videos', JSON.stringify(videos));
+}
+
+// Fecha actual
+document.getElementById('date').value =
+    new Date().toISOString().split('T')[0];
+
+updatePreview();
+
+// ===============================
+// AGREGAR VIDEO
+// ===============================
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const rawInput = document.getElementById('id').value;
+    const platform = document.getElementById('platform').value;
+
+    const videoId = extractVideoID(rawInput, platform);
+
+    const newVideo = {
+        id: videoId,
+        platform: platform,
+        title: document.getElementById('title').value,
+        description: document.getElementById('description').value,
+        date: document.getElementById('date').value,
+        tags: document.getElementById('tags').value
+            .split(',')
+            .map(t => t.trim())
+            .filter(Boolean),
+        thumbnail: getThumbnail(videoId, platform),
+        category: document.getElementById('category').value,
+        playlist: document.getElementById('playlist').value
+    };
+
+    if (videos.some(v => v.id === videoId)) {
+        status.textContent = '⚠️ Este video ya existe.';
+        return;
+    }
+
+    videos.push(newVideo);
     updatePreview();
 
-    // Agregar video
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
+    status.textContent = '✅ Video agregado.';
+    form.reset();
+});
 
-        const rawInput = document.getElementById('id').value;
-        const videoId = extractYouTubeID(rawInput);
-
-        const newVideo = {
-            id: videoId,
-            title: document.getElementById('title').value,
-            description: document.getElementById('description').value,
-            date: document.getElementById('date').value,
-            tags: document.getElementById('tags').value
-                .split(',')
-                .map(t => t.trim())
-                .filter(Boolean),
-            thumbnail: `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`,
-            category: document.getElementById('category').value,
-            playlist: document.getElementById('playlist').value
-        };
-
-        // Evitar duplicados
-        if (videos.some(v => v.id === videoId)) {
-            status.textContent = '⚠️ Este video ya está cargado.';
-            return;
-        }
-
-        videos.push(newVideo);
-        updatePreview();
-
-        status.textContent = '✅ Video agregado correctamente.';
-        form.reset();
-    });
-
-    // Limpiar TODO (form + videos + JSON)
+// ===============================
+// LIMPIAR TODO
+// ===============================
 document.getElementById('clear-form').addEventListener('click', () => {
-    const confirmClear = confirm(
-        '⚠️ Esto eliminará TODOS los videos cargados.\n¿Querés continuar?'
-    );
-
-    if (!confirmClear) return;
+    if (!confirm('⚠️ Se borrarán todos los videos. ¿Continuar?')) return;
 
     videos = [];
     localStorage.removeItem('videos');
     form.reset();
     jsonPreview.value = '[]';
-    status.textContent = '🧹 Todo fue limpiado correctamente.';
+    status.textContent = '🧹 Limpieza completa.';
 });
 
+// ===============================
+// DESCARGAR JSON
+// ===============================
+document.getElementById('download-json').addEventListener('click', () => {
+    const blob = new Blob(
+        [JSON.stringify(videos, null, 4)],
+        { type: 'application/json' }
+    );
 
-    // Descargar JSON
-    document.getElementById('download-json').addEventListener('click', () => {
-        const blob = new Blob(
-            [JSON.stringify(videos, null, 4)],
-            { type: 'application/json' }
-        );
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = 'videos.json';
-        a.click();
-        URL.revokeObjectURL(url);
-    });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'videos.json';
+    a.click();
 
-    // Copiar JSON
-    document.getElementById('copy-json').addEventListener('click', () => {
-        navigator.clipboard.writeText(jsonPreview.value);
-        status.textContent = '📋 JSON copiado al portapapeles.';
-    });
+    URL.revokeObjectURL(url);
+});
+
+// ===============================
+// COPIAR JSON
+// ===============================
+document.getElementById('copy-json').addEventListener('click', () => {
+    navigator.clipboard.writeText(jsonPreview.value);
+    status.textContent = '📋 Copiado al portapapeles.';
+});
+
 </script>
 
 </body>
