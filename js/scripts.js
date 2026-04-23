@@ -236,13 +236,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Activar tab desde hash o storage
     const savedTab = localStorage.getItem('activeTab');
-    const hash = window.location.hash.replace('#', '');
+        const hash = window.location.hash.replace('#', '');
 
-    if (hash) {
-        activateTab(hash);
-    } else if (savedTab && document.getElementById(savedTab)) {
-        activateTab(savedTab);
-    }
+        if (hash && document.getElementById(hash)) {
+            activateTab(hash);
+        } else if (savedTab && document.getElementById(savedTab)) {
+            activateTab(savedTab);
+        } else {
+            activateTab('home'); // 👈 default SIEMPRE
+        }
 
     // ===== CARGA INICIAL =====
     loadVideos();
