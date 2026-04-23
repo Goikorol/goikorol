@@ -68,6 +68,67 @@ if (videoId) {
 
     loadDetails();
 }
+// ===============================
+// CARGAR VIDEOS
+// ===============================
+
+
+async function loadVideos() {
+    const grids = document.querySelectorAll('.video-grid');
+    if (!grids.length) return;
+
+    try {
+        const response = await fetch('data/videos.json');
+        const videos = await response.json();
+
+        ALL_VIDEOS = videos;
+
+        renderHomeVideos();
+        renderLatestVideosAnnouncements();
+
+        grids.forEach(grid => {
+            const category = grid.dataset.category;
+            grid.innerHTML = '';
+
+            let filtered = videos
+                .filter(v => v.category === category)
+                .sort((a, b) => new Date(b.date) - new Date(a.date));
+
+            if (!filtered.length) {
+                grid.innerHTML = '<p>No hay videos todavía.</p>';
+                return;
+            }
+
+            filtered.forEach(video => {
+                const card = document.createElement('div');
+                card.className = 'video-card';
+                card.dataset.playlist = video.playlist;
+
+                card.onclick = () => {
+                    window.location.href = `player.html?video=${video.id}`;
+                };
+
+                card.innerHTML = `
+                    <div class="thumbnail">
+                        <img src="${video.thumbnail}" alt="${video.title}">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    <div class="video-info">
+                        <h3>${video.title}</h3>
+                        <p>${video.description}</p>
+                        <p class="video-date">📅 ${video.date}</p>
+                    </div>
+                `;
+
+                grid.appendChild(card);
+            });
+        });
+
+    } catch (err) {
+        console.error('Error cargando videos:', err);
+    }
+}
+
 
 // ===============================
 // FILTROS DE PLAYLIST
