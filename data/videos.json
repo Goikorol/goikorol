@@ -1,4 +1,32 @@
 [
+     {
+        "id": "nwMfLH-jY24",
+        "title": "🇦🇷 LA GUERRA DE LAS MALVINAS 🇦🇷",
+        "description": "Hago un vídeo homenaje sobre la Guerra de las Malvinas en recuerdo del día de Los Veteranos y Caídos.\n",
+        "date": "2026-04-05",
+        "tags": [
+            "especial",
+            "malvinas",
+            "documentales"
+        ],
+        "thumbnail": "https://img.youtube.com/vi/nwMfLH-jY24/hqdefault.jpg",
+        "category": "goikorol",
+        "playlist": "Documentales"
+    },
+    {
+        "id": "Gp8Brla6ltk",
+        "title": "🤣 Les Luthiers LUTHERAPIA (REACCIÓN show completo) 🎭",
+        "description": "Reacciono al show completo de LUTHERAPIA de Les Luthiers y me meoooo!\n",
+        "date": "2026-04-21",
+        "tags": [
+            "humor",
+            "les luthiers"
+        ],
+        "thumbnail": "https://img.youtube.com/vi/Gp8Brla6ltk/hqdefault.jpg",
+        "category": "goikorol",
+        "playlist": "Les Luthiers"
+    },
+    
     {
         "id": "vdpwO_EhGLQ",
         "title": "🕵️ HERMANOS Y DETECTIVES T1E1 | El Profesor Fontán",
@@ -169,7 +197,7 @@
         "category": "goikorol",
         "playlist": "Hermanos y Detectives"
     },
-    
+
     {
         "id": "f-miFbRdHfU",
         "title": "📺 LOS SIMULADORES T2E8 | Fin de Semana de Descanso",
