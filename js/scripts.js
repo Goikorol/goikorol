@@ -48,7 +48,9 @@ async function loadVideos() {
             const category = grid.dataset.category;
             grid.innerHTML = '';
 
-            const filtered = videos.filter(v => v.category === category);
+            let filtered = videos
+            .filter(v => v.category === category)
+            .sort((a, b) => new Date(b.date) - new Date(a.date)); // 👈 más nuevos primero
 
             if (!filtered.length) {
                 grid.innerHTML = '<p>No hay videos todavía.</p>';
