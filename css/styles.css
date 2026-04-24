@@ -647,11 +647,7 @@ footer {
     /* 16:9 dinámico */
     aspect-ratio: 16 / 9;
 
-    /* FULL WIDTH estilo YouTube */
-    max-width: 100%;
-    margin: 0;
-
-    background: black;
+    
 }
 
 /* fallback para navegadores viejos */
