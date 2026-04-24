@@ -681,7 +681,7 @@ footer {
 }
 
 .player-wrapper:hover {
-    transform: scale(1.01);
+    transform: none;
 }
 
 /* INFO */
