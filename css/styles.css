@@ -640,20 +640,25 @@ footer {
     padding: 0 1rem;
 }
 
-/* VIDEO */
 .player-wrapper {
     position: relative;
     width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
+    
+    /* 16:9 dinámico */
+    aspect-ratio: 16 / 9;
 
-    /* Esto crea el 16:9 */
-    padding-top: 56.25%; /* 9 / 16 = 0.5625 */
+    /* FULL WIDTH estilo YouTube */
+    max-width: 100%;
+    margin: 0;
 
-    border-radius: 14px;
-    overflow: hidden;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.45);
     background: black;
+}
+
+/* fallback para navegadores viejos */
+.player-wrapper::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
 }
 
 .player-wrapper iframe {
@@ -662,7 +667,19 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
+
     border: none;
+}
+
+#player {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+}
+
+.tab-content {
+    max-width: 100%;
+    padding: 0;
 }
 
 .player-wrapper {
@@ -671,6 +688,10 @@ footer {
 
 .player-wrapper:hover {
     transform: scale(1.01);
+}
+
+.player-header {
+    width: 100%;
 }
 
 /* INFO */
