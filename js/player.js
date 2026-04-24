@@ -1,12 +1,13 @@
 function getEmbedUrl(video) {
-    switch (video.platform) {
-        case "youtube":
-            return `https://www.youtube.com/embed/${video.id}?autoplay=1&rel=0`;
-        case "rumble":
-            return `https://rumble.com/embed/${video.id}`;
-        default:
-            return null;
+    if (video.platform === "youtube") {
+        return `https://www.youtube.com/embed/${video.id}?autoplay=1&rel=0`;
     }
+
+    if (video.platform === "rumble") {
+        return `https://rumble.com/embed/${video.id}`;
+    }
+
+    return null;
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
