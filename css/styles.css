@@ -678,6 +678,7 @@ footer {
 
 .player-wrapper {
     transition: transform 0.25s ease;
+    contain: layout;
 }
 
 .player-wrapper:hover {
