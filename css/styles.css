@@ -671,16 +671,7 @@ footer {
     border: none;
 }
 
-#player {
-    width: 100%;
-    max-width: 100%;
-    padding: 0;
-}
 
-.tab-content {
-    max-width: 100%;
-    padding: 0;
-}
 
 .player-wrapper {
     transition: transform 0.25s ease;
@@ -688,10 +679,6 @@ footer {
 
 .player-wrapper:hover {
     transform: scale(1.01);
-}
-
-.player-header {
-    width: 100%;
 }
 
 /* INFO */
