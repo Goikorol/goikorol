@@ -6,16 +6,73 @@
     <title>Reproduciendo Video - Goikorol</title>
     <link rel="icon" href="imagenes/logo.png" type="image/jpeg">
     <link rel="stylesheet" href="css/styles.css">
+</head>
 <body>
+    <!-- Copia tu header completo aquí (incluyendo nav, logo, menú móvil, etc.) -->
+   <header id="dynamic-header">
+    <nav>
+        <div class="logo-container">
+            <a href= "index.html">
+                <img src="imagenes/logo.webp" alt="Logo Goikorol" class="header-logo">
+            </a>
+            <a href= "index.html">
+                <span class="logo-text">Goikorol</span>
+            </a>
+        </div>
 
-<header>
-    <h1>Goikorol</h1>
+        <!-- Menú desktop (visible solo en pantallas grandes) -->
+        <ul id="nav-menu-desktop">
+             <li><a href="#home">Inicio</a></li>
+                <li><a href="#videos">Goikorol</a></li>
+                <li><a href="#themoviesniper">The Movie Sniper</a></li>
+                <li><a href="#Goikorock">Goikorock</a></li>
+                <li><a href="#gameplays">Gameplays</a></li>
+                <li><a href="#comunidad">Comunidad</a></li>
+        </ul>
+
+        <!-- Botón hamburguesa (solo visible en móvil) -->
+        <!--<div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Menú móvil desplegable -->
+        <div class="mobile-menu" id="mobile-menu">
+            <ul id="nav-menu-mobile">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#videos">Goikorol</a></li>
+                <li><a href="#themoviesniper">The Movie Sniper</a></li>
+                <li><a href="#Goikorock">Goikorock</a></li>
+                <li><a href="#gameplays">Gameplays</a></li>
+                <li><a href="#comunidad">Comunidad</a></li>
+              </ul>
+        </div>
+    </nav>
 </header>
 
-<main>
-    <div class="player-container">
-        <div class="player-wrapper">
-            <iframe id="video-player" allowfullscreen></iframe>
+    
+    <!-- Tabs (copia de index.html para consistencia) -->
+     <div class="tabs-container">
+        <div class="tabs">
+            <button class="tab-button active" data-tab="home">Inicio</button>
+            <button class="tab-button" data-tab="goikorol">Goikorol</button>
+            <button class="tab-button" data-tab="themoviesniper">The Movie Sniper</button>
+            <button class="tab-button" data-tab="Goikorock">Goikorock</button>
+            <button class="tab-button" data-tab="gameplays">Gameplays</button>
+            <button class="tab-button" data-tab="comunidad">Comunidad</button>
+        </div>
+    </div>
+
+    <main class="tab-content">
+        <section id="player" class="tab-panel active">
+            <div class="player-header">
+                <button id="back-button">⬅ Volver</button>
+                <h2 id="player-title"></h2>
+            </div>
+
+            <div class="player-wrapper">
+            <iframe id="video-player" frameborder="0" allowfullscreen></iframe>
         </div>
 
         <div class="player-info">
@@ -23,10 +80,15 @@
             <p class="player-description"></p>
             <p class="player-date"></p>
         </div>
-    </div>
-</main>
 
-<footer class="site-footer">
+            </div>
+
+        </div>
+
+        </section>
+    </main>
+
+   <footer class="site-footer">
     <div class="footer-content">
         
         <div class="social-links">
@@ -57,45 +119,16 @@
     </div>
     </footer>
 
-<script>
-function getEmbedUrl(video) {
-    if (video.platform === "youtube") {
-        return `https://www.youtube.com/embed/${video.id}`;
-    }
+    <script src="js/player.js"></script>
+    <script>
+    const backButton = document.getElementById('back-button');
 
-    if (video.platform === "rumble") {
-        if (video.id.startsWith("http")) {
-            return video.id;
-        }
-        return `https://rumble.com/embed/${video.id}`;
-    }
+    backButton.addEventListener('click', () => {
+        // Volver a index y abrir pestaña Videos
+        window.location.href = 'index.html#videos';
+    });
 
-    return null;
-}
-
-document.addEventListener("DOMContentLoaded", async () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const videoId = urlParams.get("video");
-
-    if (!videoId) return;
-
-    const response = await fetch("data/videos.json");
-    const videos = await response.json();
-
-    const video = videos.find(v => v.id === videoId);
-    if (!video) return;
-
-    const player = document.getElementById("video-player");
-    const embedUrl = getEmbedUrl(video);
-
-    if (embedUrl) {
-        player.src = embedUrl;
-    }
-
-    document.getElementById("player-title").textContent = video.title;
-    document.querySelector(".player-description").textContent = video.description;
-    document.querySelector(".player-date").textContent = `Publicado: ${video.date}`;
-});
+    
 </script>
 
 </body>
