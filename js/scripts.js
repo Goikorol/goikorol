@@ -10,10 +10,10 @@ let ALL_VIDEOS = [];
 function getEmbedUrl(video) {
     switch (video.platform) {
         case "youtube":
-            return `https://www.youtube.com/embed/${video.id}?autoplay=1&rel=0`;
+            return `https://www.youtube.com/embed/${video.id}`;
 
         case "rumble":
-            return `https://rumble.com/embed/${video.id}/?autoplay=2`;
+            return `https://rumble.com/embed/${video.id}`;
 
         default:
             return null;

@@ -3,7 +3,7 @@ function getEmbedUrl(video) {
         case "youtube":
             return `https://www.youtube.com/embed/${video.id}?autoplay=1&rel=0`;
         case "rumble":
-            return `https://rumble.com/embed/${video.id}/?autoplay=2`;
+            return `https://rumble.com/embed/${video.id}`;
         default:
             return null;
     }
@@ -50,7 +50,7 @@ function getEmbedUrl(video) {
         }
 
         // Si guardás solo el ID
-        return `https://rumble.com/embed/${video.id}/?autoplay=2`;
+        return `https://rumble.com/embed/${video.id}`;
     }
 
     return null;
