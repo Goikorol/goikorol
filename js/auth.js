@@ -33,13 +33,13 @@ onAuthStateChanged(auth, user => {
 
    if (user) {
     avatar.src = user.photoURL;
-    avatar.style.display = "block";
+    avatar.classList.add("show");
 
     userName.textContent = user.displayName;
     authBtn.textContent = "Logout";
     authBtn.onclick = logoutUser;
 } else {
-    avatar.style.display = "none";
+    avatar.classList.remove("show");
 
     userName.textContent = "";
     authBtn.textContent = "Login Google";
