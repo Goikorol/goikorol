@@ -29,6 +29,12 @@ async function logoutUser() {
 }
 
 onAuthStateChanged(auth, user => {
+    const avatar = document.getElementById("user-avatar");
+
+    avatar.src = user.photoURL;
+    avatar.style.display = "block";
+    avatar.style.display = "none";
+    
     console.log("Estado auth:", user);
     if (user) {
         userName.textContent = user.displayName;
