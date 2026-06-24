@@ -31,9 +31,20 @@ async function logoutUser() {
 onAuthStateChanged(auth, user => {
     const avatar = document.getElementById("user-avatar");
 
+   if (user) {
     avatar.src = user.photoURL;
     avatar.style.display = "block";
+
+    userName.textContent = user.displayName;
+    authBtn.textContent = "Logout";
+    authBtn.onclick = logoutUser;
+} else {
     avatar.style.display = "none";
+
+    userName.textContent = "";
+    authBtn.textContent = "Login Google";
+    authBtn.onclick = loginGoogle;
+}
     
     console.log("Estado auth:", user);
     if (user) {
