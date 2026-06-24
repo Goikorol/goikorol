@@ -1620,12 +1620,24 @@ footer {
 
 /* AVATAR */
 #user-avatar {
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #a020f0;
-    box-shadow: 0 0 10px rgba(160, 32, 240, 0.4);
+    border: 2px solid #8a2be2;
+
+    opacity: 0;
+    transform: scale(0.8);
+    transition:
+        opacity 0.35s ease,
+        transform 0.35s ease;
+
+    pointer-events: none;
+}
+
+#user-avatar.show {
+    opacity: 1;
+    transform: scale(1);
 }
 
 /* NOMBRE USUARIO */
@@ -1689,5 +1701,25 @@ footer {
     #auth-btn {
         padding: 8px 10px;
         font-size: 0.8rem;
+    }
+}
+
+#user-avatar.show {
+    animation: avatarPop 0.5s ease;
+    opacity: 1;
+    transform: scale(1);
+}
+
+@keyframes avatarPop {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    70% {
+        transform: scale(1.08);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
     }
 }
