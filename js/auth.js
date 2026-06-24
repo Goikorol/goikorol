@@ -16,6 +16,7 @@ async function loginGoogle() {
     }
 };
 
+
 window.logoutUser = async () => {
     await signOut(auth);
 };
