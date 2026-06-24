@@ -8,6 +8,7 @@ async function loginGoogle() {
             auth,
             provider
         );
+        
         console.log("Login OK");
         console.log(result.user);
     } catch (err) {
